@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Shapes", "01.Shapes\01.Shapes.csproj", "{9ADFAC83-1B51-4E5A-B70F-3AC11F0317ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BankOfKurtovoKonare", "02.BankOfKurtovoKonare\02.BankOfKurtovoKonare.csproj", "{0918CF9B-D36B-4E1F-AC39-1E4EC0FB817D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ADFAC83-1B51-4E5A-B70F-3AC11F0317ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADFAC83-1B51-4E5A-B70F-3AC11F0317ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADFAC83-1B51-4E5A-B70F-3AC11F0317ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADFAC83-1B51-4E5A-B70F-3AC11F0317ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0918CF9B-D36B-4E1F-AC39-1E4EC0FB817D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0918CF9B-D36B-4E1F-AC39-1E4EC0FB817D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0918CF9B-D36B-4E1F-AC39-1E4EC0FB817D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0918CF9B-D36B-4E1F-AC39-1E4EC0FB817D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

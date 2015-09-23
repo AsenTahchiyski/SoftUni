@@ -1,0 +1,32 @@
+Describe the differences between value and reference types. Answer the following questions:
+
+•	Which .NET data types are value types? Which types are reference types?
+Value types in .NET are all types that cannot acquire null value - byte, short, int, long, their unsigned versions and char. 
+Enumerations and structures are also value types.
+Reference types are all types that, instead of their value itself, keep a reference to that value. Absence of such reference is represented by a null value. 
+Such types are the string and all data collections (arrays, lists, dictionaries ...). Nullable value types are also reference types.
+
+•	How do value and reference types differ when assigned to a variable? 
+When assigning a value type variable, its value is stored directly in the stack memory.
+When assigning a reference type variable, its value is stored in the heap, and the stack just keeps a 4-byte (8 byte for x64) reference to that value.
+
+•	How do value and reference types behave when passed as argument to a method?
+When we pass a value type as an argument to a method, the method receives a copy of the value.
+When we pass a reference type as an argument, the method receives the address where the actual value is stored.
+
+•	Where in memory are value types allocated? Where are reference types allocated?
+Value types are stored in the stack. Reference types' values are stored in the heap, and the reference to the value itself - in the stack.
+
+•	What is data mutation? Can value types be mutated? Can reference types be mutated?
+Mutation is the ability to change the value of a variable. Value types are mutable, which means that we can change their values directly.
+Reference types are immutable by nature, so if we have to change their value, the new value is created and stored on another place in the heap, and the reference
+is updated to point at the new value.
+
+•	What is the difference between mutating and setting (assigning) a variable? Give examples.
+Mutating means modifying the already existing (set) value of a variable. Setting is giving it a value at the first place. Changing a value from null to a real
+value is considered as setting.
+
+•	What are the out and ref keywords used for? In what do they differ?
+"Ref" and "out" keywords are both used to pass an argument to a method by its address in the stack or heap, depending on the value, instead of the default "in",
+which copies the value types and copies the reference for the reference types.
+The difference between them is that "out" requires the variable to be modified.

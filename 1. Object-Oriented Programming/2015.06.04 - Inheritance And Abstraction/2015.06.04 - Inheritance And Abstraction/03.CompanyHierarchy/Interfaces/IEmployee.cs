@@ -1,0 +1,6 @@
+﻿namespace CompanyHierarchy
+{
+    interface IEmployee
+    {
+    }
+}
