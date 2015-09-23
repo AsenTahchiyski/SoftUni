@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.AA-Tree", "1.AA-Tree\1.AA-Tree.csproj", "{E4A9E163-817C-458E-A125-4D7B87DD7DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.IntervalTree", "2.IntervalTree\2.IntervalTree.csproj", "{82F48063-8490-4C61-94F5-1CE1610B6836}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4A9E163-817C-458E-A125-4D7B87DD7DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A9E163-817C-458E-A125-4D7B87DD7DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A9E163-817C-458E-A125-4D7B87DD7DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A9E163-817C-458E-A125-4D7B87DD7DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F48063-8490-4C61-94F5-1CE1610B6836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F48063-8490-4C61-94F5-1CE1610B6836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F48063-8490-4C61-94F5-1CE1610B6836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F48063-8490-4C61-94F5-1CE1610B6836}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
