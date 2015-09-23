@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Eclipse", "3.Eclipse\3.Eclipse.csproj", "{51921D88-3401-4C47-87D3-CF7F85F4C05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.HayvanNumbers", "4.HayvanNumbers\4.HayvanNumbers.csproj", "{09E19431-AE7D-447E-8ED6-576E01C6BEF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51921D88-3401-4C47-87D3-CF7F85F4C05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51921D88-3401-4C47-87D3-CF7F85F4C05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51921D88-3401-4C47-87D3-CF7F85F4C05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51921D88-3401-4C47-87D3-CF7F85F4C05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E19431-AE7D-447E-8ED6-576E01C6BEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E19431-AE7D-447E-8ED6-576E01C6BEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E19431-AE7D-447E-8ED6-576E01C6BEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E19431-AE7D-447E-8ED6-576E01C6BEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
