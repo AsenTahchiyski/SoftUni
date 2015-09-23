@@ -1,0 +1,8 @@
+First I had to set my environment variables straight. I used the following resource:
+http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation
+
+After that if was a piece of cake:
+>javac SumTwoNumbers.java
+	to compile and
+>java SumTwoNumbers
+	to run.
