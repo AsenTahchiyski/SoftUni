@@ -1,0 +1,30 @@
+body {
+	font-family: arial;
+}
+
+meter {
+	width: 180px;
+	height: 20px;
+}
+
+#profile-pic {
+	content: url(KentProfilePic.png);
+	margin: 3px;
+}
+
+#audio-with-background {
+	background-color: black;
+	height: 107px;
+}
+
+#wrapper {
+	background: pink;;
+	width: 930px;
+	height: 280px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+th {
+	font-size: 2em;
+}

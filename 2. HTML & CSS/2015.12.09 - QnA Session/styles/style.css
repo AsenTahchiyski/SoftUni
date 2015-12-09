@@ -1,0 +1,48 @@
+/*** GENERAL STYLES ***/
+
+@font-face {
+	font-family: HappyDays;
+	src: url('fonts/happydays.ttf');
+}
+
+body {
+	font-size: 16px;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+	margin:  15px 0;
+}
+
+/*** HEADER STYLES ***/
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav,
+nav > ul > li {
+	display: inline-block;
+}
+
+input {
+	float: right;
+}
+
+header:after {
+	clear: both; /* ALWAYS AFTER FLOAT */
+}
+
+nav a {
+	font-family: HappyDays;
+	text-decoration: none;
+	color: #999;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+hr {
+	color: #999;
+}

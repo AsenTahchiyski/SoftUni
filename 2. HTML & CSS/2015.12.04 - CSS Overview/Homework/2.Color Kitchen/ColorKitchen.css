@@ -1,0 +1,132 @@
+/* BODY */
+body {
+	background-image: url(colorful_dots_on_black.jpg);
+	font-family: Verdana;
+}
+
+
+/* HEADER */
+body > header {
+	font-size: 2.5em;
+	background: linear-gradient(to left, blue 0%, blue 33%, green 33%, green 66%, red 66%, red 100%);
+	color: yellow;
+	height: 65px;
+	text-align: center;
+	font-weight: bolder;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* NAVIGATION */
+aside {
+	float: left;
+	background-color: rgba(253,230,230,0.9);
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+nav > header {
+	font-size: 1.3em;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+ul li::before {
+	content: url('greenchecksmall.png');
+	position: relative;
+    top: 3px;
+    left: -7px;
+    padding-left: 7px;
+}
+
+li {
+	margin: 5px;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.8em;
+}
+
+/* ARTICLES */
+section {
+	width: 960px;
+}
+
+article {
+	background-color: rgba(253,230,230,0.9);
+	border-radius: 15px;
+	padding: 15px;
+	margin: 10px;
+	font-size: 0.9em;
+}
+
+article > header {
+	font-size: 1.5em;
+	border-radius: 8px;
+	padding: 8px;
+	margin-bottom: 5px !important;
+	height: 30px;
+}
+
+#webColors {
+	background-color: red;
+	color: white;
+}
+
+#webSafeColors {
+	background-color: orange;
+}
+
+#RGB {
+	background-color: yellow;
+}
+
+#RGBA {
+	background-color: green;
+	color: white;
+}
+
+#HSLHSV {
+	background-color: blue;
+	color: white;
+}
+
+#lorem {
+	background-color: purple;
+	color: white;
+}
+
+article > div::first-letter {
+	font-size: 3em;
+}
+
+article > div::first-line {
+	font-style: italic;
+}
+
+article footer a {
+	font-style: italic;
+	color: gray;
+}
+
+article > footer {
+	padding-top: 5px;
+}
+
+section {
+	float: left;
+}
+
+/* LATIN */
+span:lang(la) {
+	color: #05058D;
+	font-style: italic;
+}
