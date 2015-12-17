@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Styling HTML Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<table>
+			<tr>
+				<table>
+					<th>Step 1: Your details</th>
+					<tr>
+						<td>
+							<label for="name">Name</label>
+							<input type="text" class="form" id="name" placeholder="First and last name"></form>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">Email</label>
+							<input type="text" class="form" id="email" placeholder="example@domain.com">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="phone">Phone</label>
+							<input type="text" class="form" id="phone" placeholder="eg. +447500000000">
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<tr>
+				<table>
+					<th>Step 2: Delivery address</th>
+					<tr>
+						<td id="address-box">
+							<label for="address">Address</label>
+							<textarea name="address-box" id="address"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="post-code">Post code</label>
+							<input type="text" class="form" id="post-code">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="country">Country</label>
+							<input type="text" class="form" id="country">
+						</td>
+					</tr>
+				</table>
+			</tr>
+			<tr>
+				<table>
+					<th>Step 3: Card Details</th>
+					<tr>
+						<td>
+							<label for="card-type">Card type</label><br>
+							<div>
+								<input type="radio" class="card-types" id="card-visa" name="card-type" value="1"> Visa 
+								<input type="radio" class="card-types" id="card-amex" name="card-type" value="2"> AmEx 
+								<input type="radio" class="card-types" id="card-mastercard" name="card-type" value="3"> Mastercard 
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="card-number">Card number</label>
+							<input type="text" class="form" id="card-number">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="security-code">Security code</label>
+							<input type="text" class="form" id="security-code">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="name-on-card">Name on card</label>
+							<input type="text" class="form" id="name-on-card" placeholder="exact name as on the card">
+						</td>
+					</tr>
+				</table>
+			</tr>
+		</table>
+		<div id="buy-it">buy it!</div>
+	</div>
+</body>
+</html>

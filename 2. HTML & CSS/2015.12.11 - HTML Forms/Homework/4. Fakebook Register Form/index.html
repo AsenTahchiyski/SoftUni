@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fakebook Register Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>fakebook<sub>®</sub></header>
+		<p>Registration</p>
+		<p>It is safe and it will always be!</p>
+		<table>
+			<tr>
+				<td>
+					<fieldset>
+						<legend>Non-Important Information</legend>
+						<input type="text" placeholder="First Name" />
+						<input type="text" placeholder="Last Name" />
+						<input type="text" placeholder="Your Email" />
+						<input type="text" placeholder="Phone Number" />
+						<input type="text" placeholder="Your Password" />
+						<input type="text" placeholder="Website" />
+
+						<label for="birthday">Birthday</label>
+						<input type="datetime-local" name="birthday" />
+						<div id="radio">
+							<input type="radio" name="gender"><span>Female</span>
+							<input type="radio" name="gender"><span>Male</span>
+							<input type="radio" name="gender"><span>Other</span>
+						</div>
+					</fieldset>
+				</td>
+				<td>
+					<fieldset id="second-fieldset">
+						<legend>Important Information *required</legend>
+						<select name="country">
+							<option value="default">Country</option>
+						</select>
+
+						<input type="text" placeholder="Village" />
+						<input type="text" placeholder="District" />
+						<input type="text" placeholder="Street" />
+						<input type="text" class="short-field" placeholder="Nr" />
+						<input type="text" class="short-field" placeholder="Floor" />
+						<input type="text" class="short-field" placeholder="Ap Nr" />
+
+						<label for="door-color">Door Color</label>
+						<input type="color" name="door-color" />
+						<input type="text" placeholder="Water Meter Nr" />
+						<select name="panties-size">
+							<option value="default">Aunt Panties'Size</option>
+						</select>
+
+						<label for="more-info">More Personal Information</label>
+						<textarea name="more-info" cols="55" rows="4" placeholder="Give Us More Information!!!"></textarea>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+		<div class="buttons" id="clear-form">
+			<a href="#">Clear Form</a>
+		</div>
+		<div class="buttons" id="register">
+			<a href="#">Register</a>
+		</div>
+	</div>
+</body>
+</html>

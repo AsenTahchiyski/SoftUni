@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flight Order</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>Flight Order</header>
+
+		<div id="left-menu" class="menu">
+			<label for="from">From</label>
+			<select name="from" id="from-city">
+				<option>enter a city</option>
+			</select>
+			<p></p>
+			<label for="date-picker">Departure Date</label>
+			<input type="date" name="start-date" />
+
+			<label for="date-picker">Return Date</label>
+			<input type="date" name="return-date" />
+
+			<table>
+				<tr>
+					<td>
+						<label for="first-number">12+</label>
+						<input type="number" name="first-number" value="0" min="12" />
+					</td>
+					<td>
+						<label for="second-number">2-12</label>
+						<input type="number" name="second-number" value="0" min="2" max="12" />
+					</td>
+					<td>
+						<label for="third-number">0-2</label>
+						<input type="number" name="third-number" value="0" min="0" max="2" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="right-menu" class="menu">
+			<label for="to">To</label>
+			<select name="to">
+				<option>enter a city</option>
+			</select>
+			<input type="checkbox" /><span> Prefer directs</span><br/>
+
+			<label for="departure-start">Time Interval</label><br>
+			<input type="time" name="departure-start" />
+			<input type="time" name="departure-end" />
+
+			<label for="departure-start">Time Interval</label><br>
+			<input type="time" name="departure-start" />
+			<input type="time" name="departure-end" />
+
+			<label for="class">Choose class</label>
+			<select name="class">
+				<option>Economy</option>
+			</select>
+
+			<input type="submit" value="Search" />
+		</div>
+	</div>
+</body>
+</html>

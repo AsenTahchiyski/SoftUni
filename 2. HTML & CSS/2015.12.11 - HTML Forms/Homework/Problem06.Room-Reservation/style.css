@@ -1,0 +1,85 @@
+body {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color: #EBEBEB;
+	color: #41413E;
+}
+
+#wrapper {
+	width: 800px;
+}
+
+#wrapper > header:first-child {
+	font-size: 28px;
+	color: #32A2E4;
+	width: 790px;
+	background-color: #F1F1F1;
+	border-bottom: 1px dashed lightgray;
+	padding: 15px;
+	padding-bottom: 0px;
+	height: 50px;
+	padding-bottom: 0px;
+}
+
+section > header, div > header {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+section {
+	margin: 15px;
+	border-bottom: 1px dashed lightgray;
+	width: 800px;
+}
+
+input[type=text], select {
+	background-color: white;
+	padding: 5px;
+	width: 130px;
+	vertical-align: middle;
+	border-radius: 3px;
+	border: 1px solid lightgray;
+	margin-bottom: 10px;
+}
+
+section > label {
+	font-weight: bold;
+	position: absolute;
+	left: 600px;
+	top: 95px;
+}
+
+section > p {
+	width: 550px;
+	padding-bottom: 20px;
+	margin-top: 0px;
+}
+
+section > input[type=text] {
+	position: absolute;
+	left: 600px;
+	top: 120px;
+
+}
+
+section > div:first-child {
+	width: 140px;
+}
+
+section > div:nth-child(2) {
+	width: 600px;
+	position: absolute;
+	top: 225px;
+	left: 200px;
+	border: 1px solid red;
+}
+
+select {
+	width: 300px;
+}
+
+label {
+	display: block;
+	clear: both;
+}

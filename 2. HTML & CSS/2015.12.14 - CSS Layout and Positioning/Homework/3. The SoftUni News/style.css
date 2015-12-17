@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	background-color: #EEEEEE;
+	width: 960px;
+	font-family: Tahoma;
+}
+
+section {
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+article {
+	background-color: white;
+	color: gray;
+	font-size: 0.7em;	
+	margin: 10px;
+	padding: 25px;
+	padding-bottom: 10px;
+	margin-top: 60px;
+	width: 230px;
+	box-shadow: 2px 2px 5px lightgray;
+}
+
+section > article:nth-child(1) {
+	margin-left: 40px;
+}
+
+div > header {
+	color: #234465;
+	position: absolute;
+	top: 25px;
+	left: 40px;
+}
+
+article > header {
+	color: #234465;
+	text-transform: uppercase;
+	font-weight: bold;
+	min-height: 30px;
+}
+
+.date {
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.author {
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 15px;
+	margin-top: 3px;
+}
+
+.icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.description {
+	margin-top: 20px;
+	min-height: 30px;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}
+
+.tags {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+span {
+	font-weight: bold;
+}
+
+#article-1 {
+	content: url('resources/july-3-icon.png');
+	width: 60px;
+	height: 70px;
+}
+
+#article-2 {
+	content: url('resources/summer.jpg');
+	width: 230px;
+	height: 70px;
+}
+
+#article-3 {
+	content: url('resources/softuni-conf-may-2014.JPG');
+	width: 230px;
+	height: 70px;
+}
+
+ul {
+	display: inline-flex;
+	list-style-type: none;
+}
+
+li {
+	background-color: #4CA0DB;
+	color: white;
+	padding: 6px;
+	font-size: 0.6em;
+	margin-right: 1px;
+	width: 12px;
+	text-align: center;
+}
+
+li:hover {
+	background-color: #FF9C00;
+}

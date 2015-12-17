@@ -1,0 +1,102 @@
+body {
+	font-family: arial;
+}
+
+span {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-shadow: 10px 10px 12px gray;
+}
+
+#main-box {
+	padding: 10px;
+	text-align: center;
+	width: 600px;
+	border-top: 5px dotted yellow;
+	border-right: 10px solid green;
+	border-bottom: 5px solid blue;
+	border-left: 5px dashed red;
+	border-bottom-style: 2px outset blue;
+	border-bottom-shadow: 15px 15px 10px #3F3F3F;
+}
+
+#small-box {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	width: 540px;
+	height: 75px;
+	border-radius: 60px;
+	display: inline-block;
+	border: 2px solid red; 
+    box-shadow: 0 0 0 2px yellow, 
+                0 0 0 4px green, 
+                0 0 0 6px blue;
+}
+
+#small-box > p {
+	font-size: 1.4em;
+	text-shadow: 10px 10px 12px gray;	
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+
+.text-field {
+	border: 4px outset #F09E09;
+	background-color: #D8921A;
+	width: 200px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#left-txt-field {
+	top: 143px;
+	left: 110px;
+}
+
+#right-txt-field {
+	top: 143px;
+	left: 330px;
+}
+
+.baloon {
+	position: absolute;
+	background-color: #A9AAAA;
+	opacity: 0.9;
+	border: 2px dashed white;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px #A9AAAA;
+}
+
+#first-baloon {
+	top: 130px;
+	left: 520px;
+	width: 12px;
+	height: 12px;
+}
+
+#second-baloon {
+	top: 90px;
+	left: 550px;
+	width: 20px;
+	height: 20px;
+}
+
+#third-baloon {
+	top: 40px;
+	left: 585px;
+	width: 100px;
+	height: 50px;
+	border-radius: 30px;
+}
+
+#third-baloon > p {
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: -10px;
+	left: 25px;
+}
+

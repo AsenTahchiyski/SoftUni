@@ -1,0 +1,115 @@
+#wrapper {
+	background-color: #EEEEEE;
+	font-family: Arial;
+	padding: 10px;
+	width: 620px;
+	height: 330px;
+}
+
+#wrapper > header {
+	font-size: 1.4em;
+	color: #234465;
+	font-weight: 900;
+}
+
+#wrapper > p {
+	font-size: 0.8em;
+	color: #666666;
+}
+
+#register {
+	float: left;
+	width: 150px;
+	padding: 7px;
+}
+
+#register > header {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 0.8em;
+	padding-left: 7px;
+}
+
+#login {
+	float: left;
+	width: 300px;
+	height: 230px;
+	position: absolute;
+	left: 310px;
+	background-color: #234465;
+	color: white;
+	padding: 10px;
+}
+
+#login > header {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 0.8em;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+input[type="text"], input[type="password"] {
+	padding: 7px;
+	margin: 5px;
+	font-size: 0.8em;
+	width: 250px;
+}
+
+#login > p {
+	font-size: 0.7em;
+	padding: 5px;
+}
+
+input[type=checkbox] {
+	/* All browsers except webkit*/
+	transform: scale(1.5);
+	/* Webkit browsers*/
+	-webkit-transform: scale(1.5);
+	margin-right: 7px;
+	margin-top: -5px;
+}
+
+.button {
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.9em;
+	width: 100px;
+	height: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#register-button {
+	margin: 10px;
+	position: absolute;
+	left: 155px;
+	border: 2px solid #234465;
+	color: #234465;
+}
+
+#register-link {
+	position: absolute;
+	left: 145px;
+	color: #234465;
+}
+
+#login-button {
+	border: 2px solid #FC9B02;
+	color: white;
+	position: absolute;
+	left: 160px;
+	top: 130px;
+}
+
+#login > a:last-child {
+	color: white;
+	font-size: 0.7em;
+	text-decoration: underline;
+	position: absolute;
+	left: 180px;
+	top: 175px;
+}

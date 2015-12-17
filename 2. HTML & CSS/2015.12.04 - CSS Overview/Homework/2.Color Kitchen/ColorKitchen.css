@@ -2,6 +2,8 @@
 body {
 	background-image: url(colorful_dots_on_black.jpg);
 	font-family: Verdana;
+	margin: 0px;
+	padding: 0px;
 }
 
 
@@ -81,12 +83,27 @@ article > header {
 	color: white;
 }
 
+nav > ul > li:first-child:hover {
+	background-color: red;
+	border-radius: 5px;
+}
+
 #webSafeColors {
 	background-color: orange;
 }
 
+nav > ul > li:nth-child(2):hover {
+	background-color: orange;
+	border-radius: 5px;
+}
+
 #RGB {
 	background-color: yellow;
+}
+
+nav > ul > li:nth-child(3):hover {
+	background-color: yellow;
+	border-radius: 5px;
 }
 
 #RGBA {
@@ -94,14 +111,33 @@ article > header {
 	color: white;
 }
 
+nav > ul > li:nth-child(4):hover {
+	background-color: green;
+	border-radius: 5px;
+}
+
 #HSLHSV {
 	background-color: blue;
 	color: white;
 }
 
+nav > ul > li:nth-child(5):hover {
+	background-color: blue;
+	border-radius: 5px;
+}
+
 #lorem {
 	background-color: purple;
 	color: white;
+}
+
+nav > ul > li:nth-child(6):hover {
+	background-color: purple;
+	border-radius: 5px;
+}
+
+a:visited {
+	color: gray;
 }
 
 article > div::first-letter {

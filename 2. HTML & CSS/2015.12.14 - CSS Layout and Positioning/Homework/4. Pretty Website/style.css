@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+#wrapper {
+	font-family: Arial;
+	width: 900px;
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+}
+
+/* HEADER */
+
+div > header {
+	background: url('resources/headerBackground.jpg') 95% 80%;
+	height: 250px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+div > header > p {
+	vertical-align: bottom;
+	position: relative;
+	top: 185px;
+	padding-right: 110px;
+}
+
+nav {
+	background-color: #E2E2E2;
+}
+
+ul {
+	display: inline-flex;
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0;
+}
+
+li {
+	text-transform: uppercase;
+	border: 1px solid white;
+	padding: 10px 20px 10px 20px;
+}
+
+li:hover {
+	background-color: #BCBCBC;
+	cursor: pointer;
+}
+
+/* MAIN */
+
+section {
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 15px;
+	padding-bottom: 0;
+	margin: 20px;
+	width: 65%;
+}
+
+.big-header {
+	color: #87BF2C;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#med-header {
+	color: #87BF2C;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#article-1 {
+	content: url('resources/0005.jpg');
+}
+
+#article-2 {
+	content: url('resources/0004.jpg');
+}
+
+#article-3 {
+	content: url('resources/0003.jpg');
+}
+
+.article-pic {
+	display: inline-block;
+}
+
+section > p:not(a), article > main, article > header {
+	font-size: 0.8em;
+}
+
+p > span, article > header {
+	font-weight: bold;
+}
+
+article, article > header, article > main {
+	display: inline-block;
+}
+
+/* RIGHT SIDE */
+
+#news, #messages {
+	position: absolute;
+	left: 1145px;
+	width: 180px;
+}
+
+#news {
+	top: 314px;
+	background-color: #EEEEEE;
+}
+
+#messages {
+	top: 620px;
+}
+
+#news > main, #messages > main {
+	font-size: 0.8em;
+}
+
+.date {
+	font-weight: bold;
+	font-size: 0.8em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+p > a {
+	color: #87BF2C;
+	padding-top: 0;
+	margin-top: 0;
+	font-size: 0.8em;
+}
+
+.see-more {
+	padding-top: 0;
+	margin-top: 0;
+}

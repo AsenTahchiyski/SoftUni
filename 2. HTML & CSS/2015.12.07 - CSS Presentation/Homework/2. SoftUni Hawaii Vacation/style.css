@@ -1,0 +1,69 @@
+@font-face {
+	font-family: Animated;
+	src: url('resources/Animated.ttf')
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	background-image: url('resources/HawaiiBackground.png'), 
+		radial-gradient(ellipse 700px 300px at 170px 130px, white 1%, yellow 15%, white 2%, #0070DB);			);
+	background-repeat: no-repeat;
+	width: 900px;
+	height: 600px;
+}
+
+p {
+	margin-top: 0px;
+	font-family: Animated;
+	color: #FDBC21;
+	font-size: 2.5em;
+	position: absolute;
+	left: 550px;
+	top: 10px;
+}
+
+#img1 {
+	content: url('resources/VladoGHula.png');
+	position: absolute;
+	left: 40px;
+	top: 215px;
+}
+
+#img2 {
+	content: url('resources/PetiaHula.png');
+	position: absolute;
+	left: 180px;
+	top: 185px;
+}
+
+#img3 {
+	content: url('resources/TediHula.png');
+	position: absolute;
+	left: 260px;
+	top: 350px;
+}
+
+#img4 {
+	content: url('resources/NakovHula.png');
+	position: absolute;
+	left: 412px;
+	top: 158px;
+}
+
+#img5 {
+	content: url('resources/AlexHula.png');
+	position: absolute;
+	left: 495px;
+	top: 205px;
+}
+
+#img6 {
+	content: url('resources/VladoKHula.png');
+	position: absolute;
+	left: 673px;
+	top: 235px;
+}

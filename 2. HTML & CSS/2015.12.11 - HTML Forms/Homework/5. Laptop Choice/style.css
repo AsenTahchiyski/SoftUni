@@ -1,0 +1,82 @@
+body {
+	font-family: Arial;
+}
+
+#models-container > header:nth-child(1) {
+	font-size: 1.5em;
+	color: #2D435B;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: #2D435B;
+}
+
+a > div > header {
+	font-weight: bold;
+}
+
+.macbook-air {
+	content: url('resources/macbook-air.png');
+	width: 150px;
+}
+
+.macbook-pro {
+	content: url('resources/macbook-pro.png');
+	width: 150px;
+	height: 78px;
+}
+
+#models-container {
+	width: 580px;
+	height: 500px;
+	float: left;
+}
+
+.laptop-container {
+	width: 160px;
+	height: 200px;
+	display: inline-block;
+	border: 1px solid lightgray;
+	border-radius: 10px 10px 0 10px;
+	padding: 10px;
+	margin: 3px;
+	float: left;
+}
+
+.price-container {
+	background-color: #2C425A;
+	color: white;
+	width: 100px;
+	height: 35px;
+	border-radius: 10px 0 0 0;
+	position: relative;
+	left: 71px;
+	top: -8px;
+}
+
+.price-container > p {
+	text-align: center;
+	padding: 8px;
+}
+
+nav {
+	background-color: #F7FCFF;
+	border: 1px solid lightgray;
+	width: 200px;
+	float: left;
+}
+
+nav > div > header {
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #2D435B;
+}
+
+input[type=range] {
+	width: 97%;
+}

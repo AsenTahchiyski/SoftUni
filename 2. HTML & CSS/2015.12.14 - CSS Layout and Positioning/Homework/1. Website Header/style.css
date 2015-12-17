@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+	padding: 0;	
+}
+
+header {
+	background-color: #234465;
+	width: 960px;
+	color: white;
+	text-transform: uppercase;
+	font-family: Tahoma;
+	font-size: 0.8em;
+	padding: 5px;
+}
+
+#softuni-logo {
+	content: url('resources/softuni-logo.png');
+	float: left;
+	margin: 20px;
+}
+
+#container-user-search {
+	display: inline-flex;
+	float: right;
+	padding: 10px;
+}
+
+#container-user-search > div > img {
+	margin-right: 20px;
+}
+
+#search-button {
+	height: 15px;
+	width: 15px;
+	transform: scaleX(-1);
+	vertical-align: top;
+	background-color: white;
+	padding: 4px;
+	padding-bottom: 2px;
+	margin-right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+#bell-icon {
+	content: url('resources/bell-white.png');
+	height: 15px;
+	width: 15px;
+	vertical-align: middle;
+}
+
+input[type=text] {
+	margin-left: 0;
+	border: 0;
+	border-radius: 5px 0 0 5px;
+	padding: 3px;
+	padding-left: 5px;
+	position: relative;
+	left: 4px;
+	border-right: 1px solid lightgray;
+}
+
+select {
+	background-color: transparent;
+	border: 0;
+	width: 15px;
+}
+
+span {
+	text-transform: lowercase;
+	font-size: 0.7em;
+	position: absolute;
+	top: 18px;
+	left: 190px;
+}
+
+ul {
+	display: flex;
+	position: static;
+	justify-content: space-between;
+	list-style-type: none;
+	width: 70%;
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+ul li ul.dropdown{
+    min-width: 125px; /* Set width of the dropdown */
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
