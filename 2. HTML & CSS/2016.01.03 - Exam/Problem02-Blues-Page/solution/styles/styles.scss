@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "RicksAmericanNF";
+	src: url('../fonts/RicksAmericanNF.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	#wrapper {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		color: orange;
+		width: 960px;
+		margin: 0 auto;
+		header {
+			text-align: center;			
+			h1 {
+				margin: 0;
+				font-size: 60px;
+				text-transform: uppercase;
+				font-family: RicksAmericanNF;
+				font-weight: normal;
+				transform: scale(2,1);
+			}
+		}
+		nav {
+			ul {
+				list-style-type: none;
+				display: inline-flex;
+				width: 96%;
+				justify-content: space-around;
+				li {
+					font-family: RicksAmericanNF;
+					font-size: 30px;
+					text-transform: uppercase;
+					padding: 5px 40px;
+					border-radius: 50px;
+					&:hover {
+						background-color: orange;
+						color: black;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		main {
+			background-color: #3C3C3C;
+			padding: 20px;
+			display: inline-block;
+			width: 100%;
+			height: 450px;
+			article {
+				width: 600px;
+				margin-bottom: 10px;
+				#johnson {
+					content: url('../images/robert-johnson.jpg');
+				}
+				#howlin {
+					content: url('../images/howlin_wolf.jpg');
+				}
+				img {
+					width: 200px;
+					display: inline-block;
+				}
+				h2 {
+					margin: 0;
+					text-transform: uppercase;
+					font-size: 23px;
+					text-shadow: 2px 2px 5px black;
+					text-align: center;
+				}
+				p {
+					display: inline-block;
+					text-shadow: 2px 2px 5px black;
+					width: 370px;
+					vertical-align: top;
+					text-indent: 2em;
+					span {
+						font-weight: bold;
+						font-style: italic;
+					}
+				}
+			}
+			aside {
+				float: right;
+				vertical-align: top;
+				position: relative;
+				top: -470px;
+				width: 200px;
+				height: 350px;
+				margin-right: 40px;
+				div {
+					width: 200px;
+					height: 200px;
+					border-radius: 10px;
+					p {
+						text-align: center;
+						font-weight: bold;
+						text-shadow: 2px 2px 5px black;
+						background-color: rgba(101, 101, 101, 0.8);
+						bottom: 0;
+					}
+				}
+				#first {
+					background-image: url('../images/blues-legends.jpg');
+					background-size: contain;
+					&:hover p {
+						background-color: orange;
+						color: gray;
+						text-shadow: none;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				#second {
+					background-image: url('../images/BBKing.jpg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					&:hover p {
+						background-color: orange;
+						color: gray;
+						text-shadow: none;
+						cursor: pointer;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		float: none;
+		clear: both;
+		display: block;
+		footer {
+			text-align: center;
+		}
+	}
+}

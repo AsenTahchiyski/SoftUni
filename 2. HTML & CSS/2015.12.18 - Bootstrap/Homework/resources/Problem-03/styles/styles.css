@@ -1,0 +1,30 @@
+body #wrapper {
+  margin: 0;
+  padding: 0; }
+  body #wrapper header nav {
+    background-color: green; }
+    body #wrapper header nav div {
+      background-color: green; }
+      body #wrapper header nav div a {
+        color: black; }
+        body #wrapper header nav div a:hover {
+          color: white; }
+        body #wrapper header nav div a:active {
+          background-color: lightgreen; }
+  body #wrapper .jumbotron {
+    border-radius: 5px; }
+    body #wrapper .jumbotron p {
+      font-size: 3em; }
+  body #wrapper aside {
+    float: right;
+    top: -260px; }
+    body #wrapper aside a:hover {
+      background-color: lightgreen; }
+  body #wrapper main {
+    top: -200px; }
+    body #wrapper main article header {
+      font-size: 2em; }
+  body #wrapper footer {
+    top: -150px; }
+
+/*# sourceMappingURL=styles.css.map */

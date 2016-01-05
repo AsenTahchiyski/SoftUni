@@ -1,0 +1,96 @@
+@mixin input-box {
+	border-radius: 5px;
+	padding: 4.5px;
+	border: 1px solid lightgray;
+	width: 80%;
+	display: block;
+}
+
+@mixin icon-input {
+	position: relative;
+	top: -25px;
+	left: 242px;
+	size: 20px 20px;
+	display: inline-block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+	font-family: Tahoma, Helvetica, sans-serif;
+	#wrapper {
+		padding: 20px;
+		width: 800px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background-color: white;
+		box-shadow: 1px 1px 15px lightgray;
+		border-radius: 10px;
+		header {
+			text-align: center;
+			h1 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 0.8em;
+			}
+		}
+		main {
+			border-top: 2px solid lightgray;
+			width: 650px;
+			margin: 0 auto;
+			section {
+				width: 320px;
+				display: inline-block;
+				vertical-align: top;
+				p {
+					font-size: 0.9em;
+				}
+				span {
+					input[type="text"] {
+						@include input-box;
+					}
+					input[type="password"] {
+						@include input-box;
+					}
+				}
+				.ok-icon::after {
+					content: url('../images/ok.png');
+					@include icon-input;
+				}
+				.no-icon::after {
+					content: url('../images/no.png');
+					@include icon-input;
+				}
+				label {
+					font-size: 0.8em;
+				}
+				button {
+					display: block;
+					margin-top: 10px;
+					background-color: #F0F0F0;
+					font-weight: bold;
+					border-radius: 5px;
+					text-align: center;
+					border: 1px solid lightgray;
+					padding: 10px 20px;
+					box-shadow: 1px 0 5px lightgray;
+					&:hover {
+						cursor: pointer;
+						background-color: #B0DE67;
+					}
+				}
+				a {
+					text-decoration: none;
+					color: red;
+					font-size: 0.8em;
+					font-weight: bold;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

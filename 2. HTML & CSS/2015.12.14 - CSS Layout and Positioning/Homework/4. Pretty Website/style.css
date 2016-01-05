@@ -23,7 +23,7 @@ div > header {
 	text-align: right;
 }
 
-div > header > p {
+div header p {
 	vertical-align: bottom;
 	position: relative;
 	top: 185px;
@@ -91,10 +91,12 @@ section {
 }
 
 .article-pic {
-	display: inline-block;
+	float: left;
+	position: relative;
+	top: 20px;
 }
 
-section > p:not(a), article > main, article > header {
+section > p, article > main, article > header {
 	font-size: 0.8em;
 }
 
@@ -104,6 +106,16 @@ p > span, article > header {
 
 article, article > header, article > main {
 	display: inline-block;
+}
+
+article > main {
+	width: 65%;
+	margin: 20px;
+}
+
+article > header {
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 /* RIGHT SIDE */
@@ -138,10 +150,29 @@ p > a {
 	color: #87BF2C;
 	padding-top: 0;
 	margin-top: 0;
-	font-size: 0.8em;
 }
 
 .see-more {
 	padding-top: 0;
 	margin-top: 0;
+	font-size: 0.8em;
+}
+
+#news > article > main {
+	margin: 0;
+	width: auto;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #95CC30;
+	height: 70px;
+	padding-left: 120px;
+	padding-top: 20px;
+	font-size: 0.8em;
+}
+
+footer a {
+	color: black;
 }

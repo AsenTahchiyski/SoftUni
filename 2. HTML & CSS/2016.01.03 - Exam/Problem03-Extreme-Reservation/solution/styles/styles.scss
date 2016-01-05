@@ -1,0 +1,171 @@
+$blue: #2872A8;
+$background-alpha: rgba(255, 255, 255, 0.3);
+
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	#wrapper {
+		width: 800px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		color: $blue;
+		background-color: $background-alpha;
+		border-radius: 50px;
+		padding: 20px;
+		margin: 50px auto;
+		nav {
+			ul {
+				list-style-type: none;
+				width: 110%;
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline-block;
+					border-radius: 10px;
+					font-size: 20px;
+					width: 170px;
+					margin-right: 30px;
+					#para {
+						content: url('../images/paraglider-icon.png');
+					}
+					#skydive {
+						content: url('../images/sky-diver.png');
+					}
+					#climb {
+						content: url('../images/climbing.png');
+					}
+					#about {
+						content: url('../images/about-us.png');
+					}
+					border-radius: 20px;
+					&:hover {
+						background-color: #76ACD2;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		main {
+			#left, #right {
+				width: 350px;
+				height: 300px;
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 10px;
+				margin-left: 10px;
+				border: 2px solid $blue;
+				border-radius: 20px;
+				legend {
+					text-align: center;
+				}
+				input[type="text"] {
+					padding: 5px;
+					font-size: 22px;
+					border: 1px solid $blue;
+					border-radius: 0 20px 20px 0;
+					color: $blue;
+					text-align: center;
+					background-color: $background-alpha;
+					vertical-align: middle;
+					border-left: 0;
+					margin-bottom: 10px;
+				}
+			}
+			#left {
+				padding-top: 50px;
+				button {
+					background-color:$background-alpha;
+					border-radius: 20px 0 0 20px;
+					border: 1px solid $blue;
+					border-right: 0;
+					padding: 6.5px;
+					vertical-align: middle;
+					margin-bottom: 10px;
+					#user {
+						content: url('../images/user1.png');
+					}
+					#mail {
+						content: url('../images/email.png');
+					}
+					#phone {
+						content: url('../images/phone.png');
+					}
+
+				}
+			}
+			#right {
+				padding-top: 50px;
+				label {
+					display: block;
+					font-size: 20px;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				div {
+					text-align: center;
+					padding: 5px;
+				}
+				select {
+					padding: 5px;
+					font-size: 22px;
+					border: 1px solid $blue;
+					border-radius: 20px;
+					color: $blue;
+					text-align: center;
+					background-color: $background-alpha;
+					vertical-align: middle;
+					margin-bottom: 10px;
+					width: 100%;
+				}
+				input[type="date"] {
+					padding: 5px;
+					font-size: 22px;
+					border: 1px solid $blue;
+					border-radius: 20px;
+					color: $blue;
+					text-align: center;
+					background-color: $background-alpha;
+					vertical-align: middle;
+					margin-bottom: 10px;
+					width: 96%;
+				}
+			}
+		}
+		#clear, #send {
+			margin-top: 10px;
+			padding: 10px;
+			font-size: 24px;
+			border-radius: 20px;
+			text-align: center;
+			background-color: transparent;
+			vertical-align: middle;
+			font-weight: bold;
+			position: relative;
+			p {
+				margin: 0;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		#clear {
+			color: red;
+			border: 1px solid red;
+			left: 630px;
+			&:hover {
+				background-color: red;
+				color: white;
+			}
+			
+		}
+		#send {
+			color: #12F60C;
+			border: 1px solid #12F60C;
+			left: 630px;
+			&:hover {
+				background-color: #12F60C;
+				color: white;
+			}
+		}
+	}
+}

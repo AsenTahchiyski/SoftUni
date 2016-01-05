@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Helvetica, sans-serif;
+  background-image: url("../images/backgroundImage.jpg");
+  background-size: 100%; }
+  body #wrapper {
+    margin: 0 auto;
+    width: 530px;
+    height: 350px; }
+    body #wrapper > header {
+      text-align: center;
+      color: white;
+      font-size: 2em;
+      margin-top: 20px;
+      border-bottom: 1px solid white; }
+    body #wrapper section {
+      width: 230px;
+      background-color: rgba(121, 45, 48, 0.8);
+      display: inline-block;
+      border-radius: 10px;
+      vertical-align: top;
+      margin: 16px;
+      padding-bottom: 20px; }
+      body #wrapper section > header {
+        text-align: center;
+        color: white;
+        font-size: 1.3em;
+        padding: 10px; }
+      body #wrapper section div {
+        text-align: center;
+        margin: 5px; }
+        body #wrapper section div .user-img {
+          content: url("../images/username-icon.png"); }
+        body #wrapper section div .pass-img {
+          content: url("../images/password-icon.png"); }
+        body #wrapper section div img {
+          background-color: #5D3626;
+          vertical-align: middle;
+          padding: 5px;
+          border-radius: 5px 0 0 5px; }
+        body #wrapper section div input {
+          border-radius: 0 5px 5px 0;
+          padding: 5px;
+          padding-left: 10px;
+          border: 0;
+          vertical-align: middle; }
+      body #wrapper section a {
+        background-color: #3B9566;
+        color: #DEB887;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        vertical-align: middle; }
+        body #wrapper section a:hover {
+          background-color: #4A5A08; }
+        body #wrapper section a .send-img {
+          content: url("../images/paper-icon.png"); }
+        body #wrapper section a .options-img {
+          content: url("../images/cogwheel-icon.png"); }
+
+/*# sourceMappingURL=styles.css.map */

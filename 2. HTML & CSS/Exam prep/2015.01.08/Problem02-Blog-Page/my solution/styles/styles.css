@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Nunito;
+  src: url("../fonts/nunito.woff2"); }
+body {
+  margin: 0;
+  padding: 0; }
+  body #wrapper {
+    width: 1020px;
+    margin: 0 auto;
+    background-color: #F7EEDF; }
+    body #wrapper header#main-header {
+      font-family: Nunito;
+      font-size: 42px;
+      font-weight: 700;
+      background-color: #FBBE61;
+      color: white;
+      padding: 10px 0 10px 30px; }
+      body #wrapper header#main-header p {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow: 2px 1px gray; }
+    body #wrapper nav {
+      font-family: Nunito;
+      font-size: 16px;
+      font-weight: 100;
+      background-color: #40312A;
+      color: white;
+      text-transform: uppercase; }
+      body #wrapper nav ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 20px; }
+        body #wrapper nav ul li {
+          display: inline-block;
+          padding: 10px; }
+          body #wrapper nav ul li a {
+            text-decoration: none;
+            color: white; }
+            body #wrapper nav ul li a:hover {
+              color: #2D8A9B; }
+      body #wrapper nav div {
+        display: inline-block;
+        padding-left: 250px; }
+        body #wrapper nav div input {
+          background-color: #2D8A9B;
+          border: 1px solid #2D8A9B;
+          display: inline-block;
+          margin: 5px; }
+        body #wrapper nav div #magnifier {
+          content: url("../images/search-icon.png");
+          display: inline-block;
+          vertical-align: middle; }
+    body #wrapper section {
+      width: 590px;
+      display: inline-block; }
+      body #wrapper section .section-header {
+        text-transform: uppercase;
+        color: #2D8A9B;
+        font-family: Cambria;
+        font-size: 22px;
+        padding: 30px;
+        font-weight: bold; }
+      body #wrapper section article {
+        margin: 0 0 30px 30px; }
+        body #wrapper section article header {
+          font-family: Nunito;
+          font-size: 22px; }
+        body #wrapper section article p.date-comments {
+          font-family: Cambria;
+          font-size: 10px;
+          color: brown;
+          margin: 0;
+          font-style: italic; }
+        body #wrapper section article div #article-1-img {
+          content: url("../images/article-pic-01.png"); }
+        body #wrapper section article div #article-2-img {
+          content: url("../images/article-pic-02.png"); }
+        body #wrapper section article div img {
+          margin-top: 10px;
+          margin-bottom: 10px; }
+        body #wrapper section article p.description {
+          font-family: Verdana;
+          font-size: 13px;
+          margin-top: 0; }
+          body #wrapper section article p.description a {
+            text-decoration: none;
+            color: #2D8A9B; }
+    body #wrapper aside {
+      width: 300px;
+      vertical-align: top;
+      display: inline-block;
+      background-color: #EDDEC7;
+      padding: 30px;
+      margin-left: 66px;
+      height: 700px; }
+      body #wrapper aside #archives ul {
+        background-color: #2D8A9B;
+        list-style-type: none;
+        color: white;
+        font-family: Verdana;
+        font-size: 13px;
+        padding-left: 0; }
+        body #wrapper aside #archives ul li {
+          padding: 15px;
+          border-bottom: 1px solid #5ebfd0; }
+        body #wrapper aside #archives ul a {
+          text-decoration: none;
+          color: white; }
+          body #wrapper aside #archives ul a:hover {
+            text-decoration: underline; }
+          body #wrapper aside #archives ul a:hover li {
+            background-color: #39A4B6; }
+      body #wrapper aside #who-we-are header {
+        text-transform: uppercase;
+        color: #2D8A9B;
+        font-family: Cambria;
+        font-size: 22px;
+        padding: 30px;
+        font-weight: bold;
+        padding: 0; }
+      body #wrapper aside #who-we-are img {
+        content: url("../images/pic3-WhoWeAre.jpg");
+        margin-bottom: 10px;
+        margin-top: 10px; }
+      body #wrapper aside #who-we-are p {
+        margin: 0;
+        font-family: Verdana;
+        font-size: 13px; }
+        body #wrapper aside #who-we-are p a {
+          text-decoration: none;
+          color: #2D8A9B; }
+    body #wrapper footer {
+      background-color: #2D8A9B;
+      padding: 20px;
+      color: white;
+      font-family: Cambria;
+      padding-left: 30px; }
+      body #wrapper footer p {
+        margin: 0; }
+
+/*# sourceMappingURL=styles.css.map */

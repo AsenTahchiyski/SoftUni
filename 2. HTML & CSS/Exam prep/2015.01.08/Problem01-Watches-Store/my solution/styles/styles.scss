@@ -1,0 +1,77 @@
+@font-face {
+	font-family: Lemon-Regular;
+	src: url('../fonts/Lemon-Regular.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	#wrapper {
+		font-family: Lemon-Regular, Arial, sans-serif;
+		background-color: #602D75;
+		width: 1000px;
+		padding: 50px;
+		#container {
+			background-color: #FFAE32;
+			width: 900px;
+			border-radius: 10px;
+			margin: 0 auto;
+			vertical-align: middle;
+		}
+		header {
+			font-size: 24px;
+			text-align: center;
+			font-weight: 900;
+			padding-top: 20px;
+		}
+		article {
+			background-color: #5F2056;
+			border-radius: 20px 5px;
+			width: 220px;
+			margin: 20px;
+			display: inline-block;
+			padding: 10px;
+			header {
+				font-size: 22px;
+				color: white;
+
+			}
+			.warranty {
+				color: #FFAE32;
+				text-align: center;
+			}
+			p {
+				font-size: 15px;
+				color: white;
+			}
+			div {
+				border-radius: 20px;
+				background-color: white;
+				text-align: center;
+				border: 2px outset;
+				a {
+					text-decoration: none;
+					color: #AD61FF;
+				}
+			}
+
+			#model-1 {
+				content: url('../images/watch-1.jpg')
+			}
+			#model-2 {
+				content: url('../images/watch-2.png')
+			}
+			#model-3 {
+				content: url('../images/watch-3.jpg')
+			}
+
+			.model-picture {
+				width: 90%;
+				border-radius: 50%;
+				margin: 0 auto;
+				border: 5px solid #806671;
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+@media screen and (max-width: 1000px) {
+	body {
+		min-width: 0;
+		#wrapper {
+			width: 100%;
+			header {
+				height: 170px;
+				@media screen and (max-width: 756px) {
+					height: 260px;
+				}
+				div {
+					float: none;
+					clear: both;
+					display: block;
+					position: static;
+					padding: 10px;
+					margin: 0 auto;
+				}
+				#menu {
+					float: none;
+					clear: both;
+					@media screen and (max-width: 756px) {
+						width: 100%;
+						ul {
+							width: 100%;
+							display: block;
+							li {
+								margin: 0 auto 3px auto;
+								a {
+									width: 95%;
+									text-align: center;
+								}
+							}
+						}
+					}
+				}
+				#header-area-right {
+					display: block;
+					width: 100%;
+					min-width: 0px;
+				}
+				#search-form {
+					margin: 10px auto;
+					@media screen and (max-width: 756px) {
+						width: 90%;
+					}
+					input {
+						float: none;
+						clear: both;
+
+					}
+				}
+
+			}
+			section.contentblock {
+				min-width: 0;
+				#publicphotos {
+					width: 100%;
+					min-width: 0;
+				}
+			}
+			footer {
+				width: 100%;
+				min-width: 0;
+			}
+		}
+	}
+}

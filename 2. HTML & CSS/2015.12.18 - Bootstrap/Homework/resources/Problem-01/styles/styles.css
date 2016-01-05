@@ -1,0 +1,108 @@
+body {
+  background-color: #6698FF;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0; }
+  body #wrapper {
+    width: 80%;
+    margin: 0 auto; }
+    @media screen and (max-width: 960px) {
+      body #wrapper {
+        width: 100%; } }
+    body #wrapper header h1 {
+      margin: 0; }
+      @media screen and (max-width: 640px) {
+        body #wrapper header h1 {
+          display: block;
+          text-align: center; } }
+      body #wrapper header h1 a {
+        text-decoration: none; }
+        body #wrapper header h1 a span {
+          color: white; }
+        @media screen and (max-width: 640px) {
+          body #wrapper header h1 a img {
+            display: block; } }
+    body #wrapper header nav ul {
+      text-align: right;
+      margin: 0 1% 0 0; }
+      @media screen and (max-width: 640px) {
+        body #wrapper header nav ul {
+          padding-left: 1%; } }
+      body #wrapper header nav ul li {
+        display: inline-block;
+        padding: 0.5%;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0 0.5% 0 0.5%; }
+        @media screen and (max-width: 640px) {
+          body #wrapper header nav ul li {
+            display: block;
+            text-align: center; } }
+        body #wrapper header nav ul li a {
+          text-decoration: none;
+          color: black; }
+    body #wrapper section {
+      width: 75%;
+      float: left;
+      display: inline-block; }
+      @media screen and (max-width: 780px) {
+        body #wrapper section {
+          width: 100%; } }
+      body #wrapper section article {
+        background-color: #E0EAFE;
+        border: 1px solid black;
+        padding: 1%;
+        margin: 1%; }
+        body #wrapper section article div {
+          font-size: 0.9em; }
+          body #wrapper section article div p {
+            text-indent: 2em; }
+    body #wrapper aside div {
+      display: inline-block;
+      float: right;
+      width: 20%;
+      background-color: #E0EAFE;
+      border: 1px solid black;
+      padding: 1%;
+      margin: 1%; }
+      @media screen and (max-width: 780px) {
+        body #wrapper aside div {
+          display: block;
+          width: 95.7%;
+          margin: 1%;
+          clear: both;
+          float: none; } }
+      body #wrapper aside div ul {
+        padding-left: 0;
+        list-style-type: none; }
+        body #wrapper aside div ul li {
+          padding: 1%;
+          font-size: 0.9em;
+          margin-bottom: 1em; }
+          @media screen and (max-width: 780px) {
+            body #wrapper aside div ul li {
+              display: inline-block;
+              width: 20%;
+              text-align: center;
+              margin-bottom: 0; } }
+          @media screen and (max-width: 640px) {
+            body #wrapper aside div ul li {
+              display: block;
+              width: 100%;
+              text-align: center;
+              margin-bottom: 0; } }
+          body #wrapper aside div ul li a {
+            text-decoration: none;
+            color: black; }
+    body #wrapper footer {
+      clear: both;
+      background-color: #E0EAFE;
+      border: 1px solid black;
+      padding: 1%;
+      margin: 1%;
+      text-align: center; }
+      body #wrapper footer h2 {
+        margin: 0;
+        font-size: 1em; }
+
+/*# sourceMappingURL=styles.css.map */

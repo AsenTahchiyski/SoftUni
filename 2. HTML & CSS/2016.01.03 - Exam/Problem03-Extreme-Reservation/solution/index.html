@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3. Free Account</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<div id="wrapper">
+		<nav>
+			<ul>
+				<li>
+					<img id="para" />
+					<span>Paragliding</span>
+				</li>
+				<li>
+					<img id="skydive" />
+					<span>Skydiving</span>
+				</li>
+				<li>
+					<img id="climb" />
+					<span>Climbing</span>
+				</li>
+				<li>
+					<img id="about" />
+					<span>About Us</span>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<fieldset id="left">
+				<legend>Personal Info</legend>
+				<button><img id="user"></button><input type="text" placeholder="Enter your full name" />
+				<button><img id="mail"></button><input type="text" placeholder="Enter a valid e-mail" />
+				<button><img id="phone"></button><input type="text" placeholder="Enter a phone number" />
+			</fieldset>
+
+			<fieldset id="right">
+				<legend>Flight Info</legend>
+				<label for="first-time">Are flying for first time?</label>
+				<div>
+					<input type="radio" name="first-time"><span>Yes</span>
+					<input type="radio" name="first-time"><span>No</span>
+				</div>	
+				<label for="dropdown">Choose Destination</label>
+				<select name="dropdown" id="dropdown">
+					<optgroup label="Bulgaria">
+						<option value="1">Dobrostan</option>
+						<option value="2">Sopot</option>
+						<option value="3">Sofia</option>
+						<option value="4">Bourgas</option>
+					</optgroup>
+					<optgroup label="Rest of the world">
+						<option value="5">Nepal</option>
+						<option value="6">Turkey</option>
+						<option value="7">France</option>
+					</optgroup>
+				</select>
+				<label for="date">Choose Date</label>
+				<input type="date" name="date" placeholder="mm/dd/yyyy"/>
+			</fieldset>
+		</main>
+		<button id="clear">
+			<p>Clear</p>
+		</button>
+		<button id="send">
+			<p>Send</p>
+		</button>
+	</div>
+</body>
+</html>

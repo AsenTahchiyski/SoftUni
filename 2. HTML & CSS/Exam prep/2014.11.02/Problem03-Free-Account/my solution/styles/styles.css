@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  font-family: Tahoma, Helvetica, sans-serif; }
+  body #wrapper {
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 15px lightgray;
+    border-radius: 10px; }
+    body #wrapper header {
+      text-align: center; }
+      body #wrapper header h1 {
+        font-size: 24px; }
+      body #wrapper header p {
+        font-size: 0.8em; }
+    body #wrapper main {
+      border-top: 2px solid lightgray;
+      width: 650px;
+      margin: 0 auto; }
+      body #wrapper main section {
+        width: 320px;
+        display: inline-block;
+        vertical-align: top; }
+        body #wrapper main section p {
+          font-size: 0.9em; }
+        body #wrapper main section span input[type="text"] {
+          border-radius: 5px;
+          padding: 4.5px;
+          border: 1px solid lightgray;
+          width: 80%;
+          display: block; }
+        body #wrapper main section span input[type="password"] {
+          border-radius: 5px;
+          padding: 4.5px;
+          border: 1px solid lightgray;
+          width: 80%;
+          display: block; }
+        body #wrapper main section .ok-icon::after {
+          content: url("../images/ok.png");
+          position: relative;
+          top: -25px;
+          left: 242px;
+          size: 20px 20px;
+          display: inline-block; }
+        body #wrapper main section .no-icon::after {
+          content: url("../images/no.png");
+          position: relative;
+          top: -25px;
+          left: 242px;
+          size: 20px 20px;
+          display: inline-block; }
+        body #wrapper main section label {
+          font-size: 0.8em; }
+        body #wrapper main section button {
+          display: block;
+          margin-top: 10px;
+          background-color: #F0F0F0;
+          font-weight: bold;
+          border-radius: 5px;
+          text-align: center;
+          border: 1px solid lightgray;
+          padding: 10px 20px;
+          box-shadow: 1px 0 5px lightgray; }
+          body #wrapper main section button:hover {
+            cursor: pointer;
+            background-color: #B0DE67; }
+        body #wrapper main section a {
+          text-decoration: none;
+          color: red;
+          font-size: 0.8em;
+          font-weight: bold; }
+          body #wrapper main section a:hover {
+            text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */

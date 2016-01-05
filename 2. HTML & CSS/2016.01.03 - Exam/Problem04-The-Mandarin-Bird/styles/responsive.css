@@ -1,0 +1,67 @@
+/* Switches to smallest screen content style under 658px, couldn't find out why :( */
+@media screen and (max-width: 1200px) {
+  body {
+    width: 100%; }
+    body #wrapper {
+      width: 100%; }
+      body #wrapper header {
+        width: 90%;
+        background-size: cover;
+        margin: 0 auto; } }
+      @media only screen and (max-width: 1200px) and (max-width: 730px) {
+        body #wrapper header {
+          height: 165px; } }
+@media screen and (max-width: 1200px) {
+        body #wrapper header h1 {
+          font-size: 5em;
+          padding-top: 0; }
+        body #wrapper header nav ul li {
+          width: 20%; } }
+        @media only screen and (max-width: 1200px) and (max-width: 730px) {
+          body #wrapper header nav ul li {
+            display: block;
+            float: none;
+            clear: both;
+            width: 100%; } }
+@media screen and (max-width: 1200px) {
+      body #wrapper main {
+        width: 90%; } }
+      @media only screen and (max-width: 1200px) and (max-width: 730px) {
+        body #wrapper main {
+          margin-top: 220px; }
+          body #wrapper main section {
+            width: 94%;
+            float: none;
+            clear: both;
+            display: block;
+            margin: 0 auto; }
+            body #wrapper main section div {
+              display: block;
+              background-color: #B7CC89;
+              margin-bottom: 130px;
+              margin-top: 20px; }
+              body #wrapper main section div div {
+                float: none;
+                clear: both;
+                display: block;
+                margin: 0 auto; }
+              body #wrapper main section div article {
+                display: block;
+                background-color: white;
+                margin-bottom: 20px; } }
+@media screen and (max-width: 1200px) {
+        body #wrapper main aside {
+          float: none;
+          clear: both;
+          display: block;
+          width: 97%; } }
+        @media only screen and (max-width: 1200px) and (max-width: 730px) {
+          body #wrapper main aside {
+            margin: 10px auto 0 15px;
+            width: 98%; } }
+@media screen and (max-width: 1200px) {
+      body #wrapper footer {
+        width: 90%;
+        text-align: center; } }
+
+/*# sourceMappingURL=responsive.css.map */

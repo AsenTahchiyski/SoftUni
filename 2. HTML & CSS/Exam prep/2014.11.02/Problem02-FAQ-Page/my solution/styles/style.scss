@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Open-sans, sans-serif;
+	background-color: #F3F3F5;
+	header {
+		margin-bottom: 10px;
+		background: linear-gradient(#CBC9CE, #D7D6DB, #B3B2B7);
+		div {
+			width: 920px;
+			margin: 0 auto;
+			height: 350px;
+			background-image: url('../images/got-dolls.jpg');
+			h1 {
+				margin: 0;
+				background-color: rgba(94, 94, 94, 0.8);
+				position: relative;
+				width: 370px;
+				text-align: center;
+				color: white;
+				left: 420px;
+				top: 220px;
+				font-size: 4em;
+			}
+		}
+	}
+	#wrapper {
+		width: 920px;
+		margin: 0 auto;
+		
+		nav {
+			float: left;
+			ul {
+				list-style-type: none;
+				padding-left: 0;
+				margin-top: 0;
+				a {
+					text-decoration: none;
+					li {
+						background-color: #42464B;
+						color: white;
+						font-size: 0.9em;
+						width: 150px;
+						padding: 15px;
+						border-left: 4px solid #42464B;
+						&:hover {
+							background-color: #5D6167;
+							border-left: 4px solid #2F6D6C;
+						}
+						&:active {
+							border-left: 4px solid #22DBA5;
+						}
+					}
+				}
+			}
+			div {
+				text-align: left;
+				img {
+					content: url('../images/Jon-Snow.jpg');
+					width: 184px;
+					opacity: 0.7;
+				}
+			}
+		}
+		main {
+			float: right;
+			width: 700px;
+			section {
+				background-color: white;
+				border-top: 3px solid lightgray;
+				padding: 10px;
+				margin-bottom: 10px;
+				h2 {
+					color: gray;
+					text-transform: uppercase;
+					font-size: 0.7em;
+				}
+				article {
+					a {
+						text-decoration: none;
+						h3 {
+							color: blue;
+							font-size: 0.8em;
+							margin-top: 5px;
+							margin-bottom: 5px;
+						}
+					}
+					p {
+						color: gray;
+						font-size: 0.7em;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		float: none;
+		clear: both;
+		width: 100%;
+		background-color: #C9C7CC;
+		height: 100px;
+		div {
+			width: 920px !important;
+			margin: 0 auto;
+			font-size: 0.9em;
+			width: 100%;
+			color: gray;
+			padding-top: 20px;
+		}
+	}
+}
+

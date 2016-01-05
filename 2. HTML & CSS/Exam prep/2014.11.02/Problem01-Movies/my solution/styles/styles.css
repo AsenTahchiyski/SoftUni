@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; }
+  body table tr .cover-box {
+    border: 1px solid black; }
+    body table tr .cover-box:hover {
+      background-color: red; }
+  body table tr .description {
+    height: 40px; }
+  body table tr td {
+    margin: 20px;
+    width: 200px;
+    padding: 0;
+    vertical-align: top; }
+    body table tr td #silence {
+      content: url("../images/SilenceOfTheLambs.jpg"); }
+    body table tr td #hannibal {
+      content: url("../images/Hannibal.jpg"); }
+    body table tr td #dragon {
+      content: url("../images/RedDragon.jpg"); }
+    body table tr td .cover {
+      display: block;
+      margin: 0 auto; }
+    body table tr td a {
+      display: block;
+      font-size: 0.9em; }
+    body table tr td .more-info {
+      content: url("../images/MoreInfo.png");
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 3px;
+      vertical-align: middle; }
+      body table tr td .more-info:hover {
+        background-color: red; }
+    body table tr td span {
+      font-size: 0.8em;
+      vertical-align: middle; }
+    body table tr td p {
+      margin: 0; }
+    body table tr td .genre-text {
+      text-decoration: none;
+      color: gray; }
+
+/*# sourceMappingURL=styles.css.map */

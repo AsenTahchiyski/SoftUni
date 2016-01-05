@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open-sans, sans-serif;
+  background-color: #F3F3F5; }
+  body header {
+    margin-bottom: 10px;
+    background: linear-gradient(#CBC9CE, #D7D6DB, #B3B2B7); }
+    body header div {
+      width: 920px;
+      margin: 0 auto;
+      height: 350px;
+      background-image: url("../images/got-dolls.jpg"); }
+      body header div h1 {
+        margin: 0;
+        background-color: rgba(94, 94, 94, 0.8);
+        position: relative;
+        width: 370px;
+        text-align: center;
+        color: white;
+        left: 420px;
+        top: 220px;
+        font-size: 4em; }
+  body #wrapper {
+    width: 920px;
+    margin: 0 auto; }
+    body #wrapper nav {
+      float: left; }
+      body #wrapper nav ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 0; }
+        body #wrapper nav ul a {
+          text-decoration: none; }
+          body #wrapper nav ul a li {
+            background-color: #42464B;
+            color: white;
+            font-size: 0.9em;
+            width: 150px;
+            padding: 15px;
+            border-left: 4px solid #42464B; }
+            body #wrapper nav ul a li:hover {
+              background-color: #5D6167;
+              border-left: 4px solid #2F6D6C; }
+            body #wrapper nav ul a li:active {
+              border-left: 4px solid #22DBA5; }
+      body #wrapper nav div {
+        text-align: left; }
+        body #wrapper nav div img {
+          content: url("../images/Jon-Snow.jpg");
+          width: 184px;
+          opacity: 0.7; }
+    body #wrapper main {
+      float: right;
+      width: 700px; }
+      body #wrapper main section {
+        background-color: white;
+        border-top: 3px solid lightgray;
+        padding: 10px;
+        margin-bottom: 10px; }
+        body #wrapper main section h2 {
+          color: gray;
+          text-transform: uppercase;
+          font-size: 0.7em; }
+        body #wrapper main section article a {
+          text-decoration: none; }
+          body #wrapper main section article a h3 {
+            color: blue;
+            font-size: 0.8em;
+            margin-top: 5px;
+            margin-bottom: 5px; }
+        body #wrapper main section article p {
+          color: gray;
+          font-size: 0.7em; }
+  body footer {
+    float: none;
+    clear: both;
+    width: 100%;
+    background-color: #C9C7CC;
+    height: 100px; }
+    body footer div {
+      width: 920px !important;
+      margin: 0 auto;
+      font-size: 0.9em;
+      width: 100%;
+      color: gray;
+      padding-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */

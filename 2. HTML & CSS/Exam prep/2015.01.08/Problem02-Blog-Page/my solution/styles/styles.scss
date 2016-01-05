@@ -1,0 +1,184 @@
+@font-face {
+	font-family: Nunito;
+	src: url('../fonts/nunito.woff2');
+}
+
+@mixin sectionHeader {
+	text-transform: uppercase;
+	color: $blue;
+	font-family: Cambria;
+	font-size: 22px;
+	padding: 30px;
+	font-weight: bold;
+}
+
+$blue: #2D8A9B;
+$orange: #FBBE61;
+
+body {
+	margin: 0;
+	padding: 0;
+	#wrapper {
+		width: 1020px;
+		margin: 0 auto;
+		background-color: #F7EEDF;
+		header#main-header {
+			font-family: Nunito;
+			font-size: 42px;
+			font-weight: 700;
+			background-color: $orange;
+			color: white;
+			padding: 10px 0 10px 30px;
+			p {
+				margin-top: 0;
+				margin-bottom: 0;
+				text-shadow: 2px 1px gray;
+			}
+		}
+		nav {
+			font-family: Nunito;
+			font-size: 16px;
+			font-weight: 100;
+			background-color: #40312A;
+			color: white;
+			text-transform: uppercase;
+			ul {
+				display: inline-block;
+				list-style-type: none;
+				margin: 0;
+				padding-left: 20px;
+				li {
+					display: inline-block;
+					padding: 10px;
+					a {
+						text-decoration: none;
+						color: white;
+						&:hover {
+							color: $blue;
+						}
+					}
+				}
+			}
+			div {
+				display: inline-block;
+				padding-left: 250px;
+				input {
+					background-color: $blue;
+					border: 1px solid $blue;
+					display: inline-block;
+					margin: 5px;
+				}
+				#magnifier {
+					content: url('../images/search-icon.png');
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+		section {
+			width: 590px;
+			display: inline-block;
+			.section-header {
+				@include sectionHeader;
+			}
+			article {
+				margin: 0 0 30px 30px;
+				header {
+					font-family: Nunito;
+					font-size: 22px;
+				}
+				p.date-comments {
+					font-family: Cambria;
+					font-size: 10px;
+					color: brown;
+					margin: 0;
+					font-style: italic;
+				}
+				div {
+					#article-1-img {
+						content: url('../images/article-pic-01.png');
+					}
+					#article-2-img {
+						content: url('../images/article-pic-02.png');
+					}
+					img{
+						margin-top: 10px;
+						margin-bottom: 10px;
+					}
+				}
+				p.description {
+					font-family: Verdana;
+					font-size: 13px;
+					margin-top: 0;
+					a{
+						text-decoration: none;
+						color: $blue;
+					}
+				}
+			}
+		}
+		aside {
+			width: 300px;
+			vertical-align: top;
+			display: inline-block;
+			background-color: #EDDEC7;
+			padding: 30px;
+			margin-left: 66px;
+			height: 700px;
+			#archives {
+				ul {
+					background-color: $blue;
+					list-style-type: none;
+					color: white;
+					font-family: Verdana;
+					font-size: 13px;
+					padding-left: 0;
+					li {
+						padding: 15px;
+						border-bottom: 1px solid lighten($blue, 20%);
+					}
+					a {
+						text-decoration: none;
+						color: white;
+						&:hover {
+							text-decoration: underline;
+						}
+						&:hover li {
+							background-color: #39A4B6;
+						}
+					}
+				}
+			}
+			#who-we-are {
+				header {
+					@include sectionHeader;
+					padding: 0;
+				}
+				img {
+					content: url('../images/pic3-WhoWeAre.jpg');
+					margin-bottom: 10px;
+					margin-top: 10px;
+				}
+				p {
+					margin: 0;
+					font-family: Verdana;
+					font-size: 13px;
+					a{
+						text-decoration: none;
+						color: $blue;
+					}
+				}
+			}
+		}
+		footer {
+			background-color: $blue;
+			padding: 20px;
+			color: white;
+			font-family: Cambria;
+			padding-left: 30px;
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

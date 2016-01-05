@@ -1,0 +1,78 @@
+/* Switches to smallest screen content style under 658px, couldn't find out why :( */
+@media screen and (max-width: 1200px) {
+	body {
+		width: 100%;
+		#wrapper {
+			width: 100%;
+			header {
+				width: 90%;
+				background-size:cover;
+				margin: 0 auto;
+				@media only screen and (max-width: 730px) {
+					height: 165px;
+				}
+				h1 {
+					font-size: 5em;
+					padding-top: 0;
+				}
+				nav {
+					ul {
+						li {
+							width: 20%;
+							@media only screen and (max-width: 730px) {
+								display: block;
+								float: none;
+								clear: both;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+			main {
+				width: 90%;
+				@media only screen and (max-width: 730px) {
+					margin-top: 220px;
+					section {
+						width: 94%;
+						float: none;
+						clear: both;
+						display: block;
+						margin: 0 auto;
+						div {
+							display: block;
+							background-color: #B7CC89;
+							margin-bottom: 130px;
+							margin-top: 20px;
+							div {
+								float: none;
+								clear: both;
+								display: block;
+								margin: 0 auto;
+							}
+							article {
+								display: block;
+								background-color: white;
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+				aside {
+					float: none;
+					clear: both;
+					display: block;
+					width: 97%;
+					@media only screen and (max-width: 730px) {
+						margin: 10px auto 0 15px;
+						width: 98%;
+					}
+				}
+			}
+			footer {
+				width: 90%;
+				text-align: center;
+			}
+		}
+	}
+}

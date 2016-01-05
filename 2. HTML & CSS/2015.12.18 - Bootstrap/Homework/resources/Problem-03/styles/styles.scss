@@ -1,0 +1,53 @@
+@mixin showBorder {
+	border: 1px solid red;
+}
+
+body {
+	#wrapper {
+		margin: 0;
+		padding: 0;
+		header {
+			nav {
+				background-color: green;
+				div {
+					background-color: green;
+					a {
+						color: black;
+						&:hover {
+							color: white;
+						}
+						&:active {
+							background-color: lightgreen;
+						}
+					}
+				}
+			}
+		}
+		.jumbotron {
+			border-radius: 5px;
+			p {
+				font-size: 3em;
+			}
+		}
+		aside {
+			float: right;
+			top: -260px;
+			a {
+				&:hover {
+					background-color: lightgreen;
+				}
+			}
+		}
+		main {
+			top: -200px;
+			article {
+				header {
+					font-size: 2em;
+				}
+			}
+		}
+		footer {
+			top: -150px;
+		}
+	}
+}

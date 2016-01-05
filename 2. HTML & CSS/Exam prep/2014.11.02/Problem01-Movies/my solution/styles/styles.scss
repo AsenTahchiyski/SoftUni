@@ -1,0 +1,63 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	table {
+		tr {
+			.cover-box {
+				border: 1px solid black;
+				&:hover {
+					background-color: red;
+				}
+			}
+			.description {
+				height: 40px;
+			}
+			td {
+				margin: 20px;
+				width: 200px;
+				padding: 0;
+				vertical-align: top;
+				
+				#silence {
+					content: url('../images/SilenceOfTheLambs.jpg');
+				}
+				#hannibal {
+					content: url('../images/Hannibal.jpg');
+				}
+				#dragon {
+					content: url('../images/RedDragon.jpg');
+				}
+				.cover {
+					display: block;
+					margin: 0 auto;
+				}
+				a {
+					display: block;
+					font-size: 0.9em;
+				}
+				.more-info {
+					content: url('../images/MoreInfo.png');
+					border: 1px solid black;
+					padding: 5px;
+					border-radius: 3px;
+					vertical-align: middle;
+					&:hover {
+						background-color: red;
+					}
+				}
+				span {
+					font-size: 0.8em;
+					vertical-align: middle;
+				}
+				p {
+					margin: 0;
+				} 
+				.genre-text {
+					text-decoration: none;
+					color: gray;
+				}
+			}
+		}
+	}
+}
