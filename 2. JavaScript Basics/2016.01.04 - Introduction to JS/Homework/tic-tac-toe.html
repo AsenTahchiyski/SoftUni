@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style-tic-tac-toe.css">
+</head>
+<body>
+    <script>
+        var emptySymbol = " ";
+        var board = [   [emptySymbol, emptySymbol, emptySymbol],
+                        [emptySymbol, emptySymbol, emptySymbol],
+                        [emptySymbol, emptySymbol, emptySymbol]];
+        function drawBoard(board) {
+            document.getElementById("1").innerHTML = board[0][0];
+            document.getElementById("2").innerHTML = board[0][1];
+            document.getElementById("3").innerHTML = board[0][2];
+            document.getElementById("4").innerHTML = board[1][0];
+            document.getElementById("5").innerHTML = board[1][1];
+            document.getElementById("6").innerHTML = board[1][2];
+            document.getElementById("7").innerHTML = board[2][0];
+            document.getElementById("8").innerHTML = board[2][1];
+            document.getElementById("9").innerHTML = board[2][2];
+        }
+        function checkWinHorizontal(board, row) {
+            if (board[row][0] == board[row][1] &&
+                board[row][0] == board[row][2] &&
+                board[row][0] != emptySymbol) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function checkWinVertical(board, col) {
+            if (board[0][col] == board[1][col] &&
+                board[0][col] == board[2][col] &&
+                board[0][col] != emptySymbol) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function checkWinDiagonal(board) {
+            if (board[0][0] == board[1][1] &&
+                board[0][0] == board[2][2] &&
+                board[0][0] != emptySymbol) {
+                return true;
+            } else if (board[0][2] == board[1][1] &&
+                    board[0][2] == board[2][0] &&
+                    board[0][2] != emptySymbol) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function checkForVictory(board) {
+            if (checkWinHorizontal(board, 0) ||
+                checkWinHorizontal(board, 1) ||
+                checkWinHorizontal(board, 2) ||
+                checkWinVertical(board, 0) ||
+                checkWinVertical(board, 1) ||
+                checkWinVertical(board, 2) ||
+                checkWinDiagonal(board)) {
+                alert("You have won!");
+            }
+        }
+        var firstPlayerTurn = true;
+        function changeValue(row, col) {
+            if (board[row][col] == emptySymbol) {
+                if (firstPlayerTurn) {
+                    board[row][col] = "o";
+                    firstPlayerTurn = false;
+                }
+                else {
+                    board[row][col] = "x";
+                    firstPlayerTurn = true;
+                }
+                drawBoard(board);
+                checkForVictory(board);
+            }
+        }
+    </script>
+    <table>
+        <tr>
+            <td id="1" onclick="changeValue(0, 0)"><script>document.write(board[0][0])</script></td>
+            <td id="2" onclick="changeValue(0, 1)"><script>document.write(board[0][1])</script></td>
+            <td id="3" onclick="changeValue(0, 2)"><script>document.write(board[0][2])</script></td>
+        </tr>
+        <tr>
+            <td id="4" onclick="changeValue(1, 0)"><script>document.write(board[1][0])</script></td>
+            <td id="5" onclick="changeValue(1, 1)"><script>document.write(board[1][1])</script></td>
+            <td id="6" onclick="changeValue(1, 2)"><script>document.write(board[1][2])</script></td>
+        </tr>
+        <tr>
+            <td id="7" onclick="changeValue(2, 0)"><script>document.write(board[2][0])</script></td>
+            <td id="8" onclick="changeValue(2, 1)"><script>document.write(board[2][1])</script></td>
+            <td id="9" onclick="changeValue(2, 2)"><script>document.write(board[2][2])</script></td>
+        </tr>
+    </table>
+
+</body>
+</html>

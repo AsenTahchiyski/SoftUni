@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = +prompt('a = ');
+    var b = +prompt('b = ');
+    var c = +prompt('c = ');
+    var x1, x2 = null;
+    var rootsFound = false;
+    if(a === 0) {
+        x1 = x2 = -c/b;
+        rootsFound = true;
+    } else {
+        x1 = (-b - Math.sqrt(b*b-4*a*c))/(2*a);
+        x2 = (-b + Math.sqrt(b*b-4*a*c))/(2*a);
+        rootsFound = true;
+    }
+    if(rootsFound && !isNaN(x1) && !isNaN(x2)) {
+        if(x1 !== null && x2 !== null && x1 !== x2) {
+            console.log('x1 = ' + x1);
+            console.log('x2 = ' + x2);
+        }
+        if(x1 === x2 && !isNaN(x1)) {
+            console.log('x = ' + x1);
+        }
+    } else {
+        console.log('No real roots')
+    }
+</script>
+<p>Check console for result</p>
+</body>
+</html>

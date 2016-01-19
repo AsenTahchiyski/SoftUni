@@ -1,0 +1,12 @@
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10%;
+}
