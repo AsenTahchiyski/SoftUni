@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="margin: 0 auto;">
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+    </div>
+</body>
+<script>
+    function ellipse(context, cx, cy, rx, ry){
+        context.save(); // save state
+        context.beginPath();
+
+        context.translate(cx-rx, cy-ry);
+        context.scale(rx, ry);
+        context.arc(1, 1, 1, 0, 2 * Math.PI, false);
+
+        context.restore(); // restore to original state
+        context.stroke();
+    }
+
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ellipse(ctx, 100, 100, 50, 20);
+    ctx.arc(100, 200, 50, 0, 360);
+    ctx.stroke();
+</script>
+</html>
