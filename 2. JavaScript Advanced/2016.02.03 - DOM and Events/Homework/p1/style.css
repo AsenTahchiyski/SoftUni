@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    background-color: antiquewhite;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+span {
+    color: red;
+}
+
+p {
+    margin: 5px 0 0 0;
+}
+
+input[type=text], input[type=date] {
+    display: block;
+
+}
+
+input[type=checkbox] {
+    margin-top: 20px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+#invoice-details {
+    display: none;
+}

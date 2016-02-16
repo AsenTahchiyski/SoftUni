@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1>Регистрация за уебинар</h1></header>
+        <p>Име и Фамилия:<span>*</span></p>
+        <input type="text">
+        <p>Адрес:</p>
+        <input type="text">
+        <p>Населено място:</p>
+        <input type="text">
+        <p>Пощенски код:</p>
+        <input type="text">
+        <p>Email:<span>*</span></p>
+        <input type="text">
+        <p>Телефон:<span>*</span></p>
+        <input type="text">
+        <p>Дата на семинара:<span>*</span></p>
+        <input type="date">
+        <input type="checkbox" id="invoice" onclick="showInvoiceDetails('invoice-details')">
+        <label for="invoice">Желая фактура</label>
+        <div id="invoice-details">
+            <p>Фирма / Организация:<span>*</span></p>
+            <input type="text">
+            <p>МОЛ:<span>*</span></p>
+            <input type="text">
+            <p>ЕИК:<span>*</span></p>
+            <input type="text">
+            <p>ИН по ДДС:<span>*</span></p>
+            <input type="text">
+            <p>Адрес:<span>*</span></p>
+            <input type="text">
+        </div>
+        <div id="buttons">
+            <button>Регистрирай се</button>
+            <button>Изчисти</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
