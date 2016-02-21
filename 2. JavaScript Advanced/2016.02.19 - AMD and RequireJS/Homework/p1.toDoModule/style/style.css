@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
+}
+
+#wrapper {
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.container-header {
+    font-family: "Book Antiqua", serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.container {
+    padding: 10px;
+}
+
+section {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+}
+
+button {
+    margin: 5px 5px 0 5px;
+}
+
+section > input[type=text], section > button {
+    /*float: right;*/
+    margin: 5px 5px 0 0;
+    position: relative;
+    left: 63%;
+}
+
+.inner-container {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.inner-section {
+    padding: 5px;
+    border: 1px solid black;
+}
