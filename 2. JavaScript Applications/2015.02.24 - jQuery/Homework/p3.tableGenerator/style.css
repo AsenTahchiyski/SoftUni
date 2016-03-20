@@ -1,0 +1,27 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #76923C;
+    text-transform: capitalize;
+}
+
+td {
+   width: 120px;
+    padding: 0 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+table {
+    margin: 10px 0;
+}

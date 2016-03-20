@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Books Books</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Books</h1>
+
+            <div id="books"></div>
+        <div id="bookButtons">
+            <div id="bookAddContainer">
+                <input id="bookAddTitle" placeholder="Title">
+                <input id="bookAddAuthor" placeholder="Author">
+                <input id="bookAddIsbn" placeholder="ISBN">
+                <button id="bookAdd">Add</button>
+            </div>
+            <div id="bookEditContainer">
+                <input id="bookEditInput" placeholder="Book to edit">
+                <button id="bookEdit">Edit</button>
+            </div>
+            <div id="bookEditOptions">
+                <input id="bookEditName" placeholder="Book name">
+                <input id="bookEditTitle" placeholder="Book title">
+                <input id="bookEditISBN" placeholder="Book ISBN">
+                <button id="bookEditConfirm">Save Changes</button>
+            </div>
+            <div id="bookDeleteContainer">
+                <input id="bookDeleteInput" placeholder="Book to delete">
+                <button id="bookDelete">Delete</button>
+            </div>
+        </div>
+    </div>
+    <script src="lib/require.js" data-main="app"></script>
+</body>
+</html>

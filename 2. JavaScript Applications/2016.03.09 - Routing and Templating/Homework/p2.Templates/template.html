@@ -1,0 +1,24 @@
+<h1>{{header}}</h1>
+
+{{#empty}}
+<p>No data</p>
+{{/empty}}
+{{^empty}}
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Job</th>
+    <th>Website</th>
+    </thead>
+
+    <tbody>
+    {{#data}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{job}}</td>
+        <td><a href="{{site}}">{{site}}</a></td>
+    </tr>
+    {{/data}}
+    </tbody>
+</table>
+{{/empty}}

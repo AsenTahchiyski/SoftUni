@@ -1,0 +1,24 @@
+<h1>{{header}}</h1>
+
+{{#empty}}
+<p>No data</p>
+{{/empty}}
+{{^empty}}
+<table>
+    <thead>
+    <th>Full Name</th>
+    <th>Age</th>
+    <th>Country</th>
+    </thead>
+
+    <tbody>
+    {{#data}}
+    <tr>
+        <td>{{firstName}} {{lastName}}</td>
+        <td>{{age}}</td>
+        <td>{{country}}</td>
+    </tr>
+    {{/data}}
+    </tbody>
+</table>
+{{/empty}}

@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: azure;
+}
+
+#wrapper {
+    width: 920px;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 20px;
+}
+
+button {
+    margin: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    padding: 5px;
+    font-weight: bold;
+}

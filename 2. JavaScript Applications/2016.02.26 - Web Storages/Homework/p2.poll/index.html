@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 2. Poll</title>
+    <script src="../jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Poll</h1>
+            <p id="timer"></p>
+        </header>
+
+        <section id="question1">
+            <p>1. What does HTML mean?</p>
+            <label for="q-1-1"><input type="radio" name="question1" id="q-1-1" value="1">Hyperspace Turbo Markup Language</label>
+            <label for="q-1-2"><input type="radio" name="question1" id="q-1-2" value="2">Hitar Tekst s Mnogo Linkove</label>
+            <label for="q-1-3"><input type="radio" name="question1" id="q-1-3" value="3">Hyper Text Markup Language</label>
+            <label for="q-1-4"><input type="radio" name="question1" id="q-1-4" value="4">How To Make Love</label>
+        </section>
+
+        <section id="question2">
+            <p>2. What are the basic technologies behind HTML5?</p>
+            <label for="q-2-1"><input type="radio" name="question2" id="q-2-1" value="1">XML, JSON, CSS</label>
+            <label for="q-2-2"><input type="radio" name="question2" id="q-2-2" value="2">XML, CSS, JavaScript</label>
+            <label for="q-2-3"><input type="radio" name="question2" id="q-2-3" value="3">HTTP, WWW, Popup ads</label>
+            <label for="q-2-4"><input type="radio" name="question2" id="q-2-4" value="4">HTML, CSS, JavaScript</label>
+        </section>
+
+        <section id="question3">
+            <p>3. Which of the following is being kept after browsing session is closed?</p>
+            <label for="q-3-1"><input type="radio" name="question3" id="q-3-1" value="1">Cookies and Session Storage</label>
+            <label for="q-3-2"><input type="radio" name="question3" id="q-3-2" value="2">Local and Session Storage</label>
+            <label for="q-3-3"><input type="radio" name="question3" id="q-3-3" value="3">Cookies and Local storage</label>
+            <label for="q-3-4"><input type="radio" name="question3" id="q-3-4" value="4">All of the above</label>
+        </section>
+
+        <button id="submit">Submit</button>
+        <button id="clear">Clear timer and answers (debugging purposes only)</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
