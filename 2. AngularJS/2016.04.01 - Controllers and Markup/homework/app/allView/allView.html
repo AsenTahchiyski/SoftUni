@@ -1,0 +1,24 @@
+<div class="filters">
+    <span>Filter by:</span>
+    <input type="text" placeholder="Category" ng-model="searchCategory.category">
+    <input type="text" placeholder="Date" ng-model="searchDate.date">
+    <span>Subtitles?</span>
+    <select ng-model="searchSubs">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="">All</option>
+    </select>
+</div>
+
+<ul ng-repeat="video in videos | filter: searchCategory | filter: searchDate | filter: searchSubs | orderBy: ['title', 'length', 'likes']">
+    <li class="title">{{video.title}} ({{video.date | date: 'd-MMM-yyyy'}})</li>
+    <li>{{video.category}}, {{video.length}} min</li>
+    <img ng-src={{video.picture}} alt="Movie cover image" class="cover" />
+    <li>Has subtitles: {{video.hasSubs}}</li>
+    <li>Likes: {{video.likes}}</li>
+    <li class="comments">Comments:<br />
+        <ul ng-repeat="comment in video.comments">
+            <li>({{comment.date | date: 'd-MMM-yyyy'}}) {{comment.username}}: {{comment.content}}</li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,31 @@
+<div ng-controller="AddViewCtrl">
+    <p>Add new video</p>
+    <ul id="input-form">
+        <li>
+            <form name="titleForm">
+                <input type="text" ng-model="title" placeholder="Title" required/>
+                <span ng-show="titleForm.$untouched || titleForm.$invalid">Required</span>
+            </form>
+        </li>
+        <li>
+            <form name="picUrlForm">
+                <input type="url" ng-model="picUrl" placeholder="Picture URL" required/>
+                <span ng-show="picUrlForm.$untouched || picUrlForm.$invalid">Required</span>
+            </form>
+        </li>
+        <li>
+            <form name="categoryForm">
+                <input type="text" ng-model="category" placeholder="Category" required/>
+                <span ng-show="categoryForm.$untouched || categoryForm.$invalid">Required</span>
+            </form>
+        </li>
+        <li><input type="text" ng-model="length" placeholder="Length in minutes"/></li>
+        <li><input type="text" ng-model="date" placeholder="Date"/></li>
+        <li><input type="text" ng-model="hasSubs" placeholder="Has subtitles"/></li>
+        <li>
+            <button ng-click="insertVideo()"
+                    ng-disabled="titleForm.$invalid || picUrlForm.$invalid || categoryForm.$invalid">Add
+            </button>
+        </li>
+    </ul>
+</div>

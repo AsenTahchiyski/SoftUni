@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ng-app="myApp">
+    <div ng-controller="ImgCtrl">
+        <p>Paste an image url in the text box:</p>
+        <input type="text" ng-model="imgUrl" name="imgUrl"><br>
+        <img ng-src={{imgUrl}} alt="Image">
+    </div>
+</div>
+<script src="../libs/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
