@@ -1,15 +1,75 @@
 -- Problem 1.	Create a chat database in MongoDb
-db.messages.insert({text:'My first MongoDB insert!', date:new Date(), isRead: false, user:{username:'pesho', fullName:'Petar Petrov', website:'www.petar.com'}})
+db.messages.insert({
+	text:'My first MongoDB insert!', 
+	date:new Date(), 
+	isRead: false, 
+	user:
+	{
+		username:'pesho', 
+		fullName:'Petar Petrov', 
+		website:'www.petar.com'
+	}
+})
 
-db.messages.insert({text:'My second MongoDB insert!', date:new Date(), isRead: false, user:{username:'mimata', fullName:'Maria Mariyska', website:'www.marche.to'}})
+db.messages.insert({
+	text:'My second MongoDB insert!', 
+	date:new Date(), 
+	isRead: false, 
+	user:
+	{
+		username:'mimata', 
+		fullName:'Maria Mariyska', 
+		website:'www.marche.to'
+	}
+})
 
-db.messages.insert({text:'Hello Mongo World!', date:new Date(), isRead: false, user:{username:'sevar', fullName:'Sevar Dulov', website:'www.dulo.bg'}})
+db.messages.insert({
+	text:'Hello Mongo World!', 
+	date:new Date(), 
+	isRead: false, 
+	user:
+	{
+		username:'sevar', 
+		fullName:'Sevar Dulov', 
+		website:'www.dulo.bg'
+	}
+})
 
-db.messages.insert({text:'Zdrasti Pesho, are na bira i shkembe we', date:new Date(), isRead: false, user:{username:'sevar', fullName:'Sevar Dulov', website:'www.dulo.bg'}})
+db.messages.insert({
+	text:'Zdrasti Pesho, are na bira i shkembe we', 
+	date:new Date(), 
+	isRead: false, 
+	user:
+	{
+		username:'sevar', 
+		fullName:'Sevar Dulov', 
+		website:'www.dulo.bg'
+	}
+})
 
-db.messages.insert({text:'Севаре, пиши на кирилица бе мен', date:new Date(), isRead: false, user:{username:'pesho', fullName:'Petar Petrov', website:'www.petar.com'}})
+db.messages.insert({
+	text:'Севаре, пиши на кирилица бе мен', 
+	date:new Date(), 
+	isRead: false, 
+	user:
+	{
+		username:'pesho', 
+		fullName:'Petar Petrov', 
+		website:'www.petar.com'
+	}
+})
 
-db.messages.insert({text:'Хубаво. Лъчони. 12:00.', date:new Date(), isRead: false, user:{username:'sevar', fullName:'Sevar Dulov', website:'www.dulo.bg'}})
+db.messages.insert({
+	text:'Хубаво. Лъчони. 12:00.', 
+	date:new Date(), 
+	isRead: false, 
+	user:
+	{
+		username:'sevar', 
+		fullName:'Sevar Dulov', 
+		website:'www.dulo.bg'
+	}
+})
 
 db.messages.find()
 
@@ -17,35 +77,31 @@ mongodump --db messages --collection messages
 mongorestore --collection messages --db messages dump/messages/messages.bson
 
 -- Problem 2.	Create a blog database in Mongo management tool
-db.blog.posts.insert(
-    {
-        title:'MongoDB is cool.', 
-        content:'I like MongoDB as I like JS - a lot.',
-        creationDate:new Date(),
-        category:'general',
-        tags:['mongodb', 'rocks'],
-        author: {
-            name:'Pesho',
-            twitter:'pecata',
-            linkedin:'petarpetrov'
-        }
-    }
-)
+db.blog.posts.insert({
+	title:'MongoDB is cool.', 
+	content:'I like MongoDB as I like JS - a lot.',
+	creationDate:new Date(),
+	category:'general',
+	tags:['mongodb', 'rocks'],
+	author: {
+		name:'Pesho',
+		twitter:'pecata',
+		linkedin:'petarpetrov'
+	}
+})
 
-db.blog.posts.insert(
-    {
-        title:'Robomongo', 
-        content:'Robomongo looks nice.',
-        creationDate:new Date(),
-        category:'general',
-        tags:['mongodb', 'robomongo'],
-        author: {
-            name:'Pesho',
-            twitter:'pecata',
-            linkedin:'petarpetrov'
-        }
-    }
-)
+db.blog.posts.insert({
+	title:'Robomongo', 
+	content:'Robomongo looks nice.',
+	creationDate:new Date(),
+	category:'general',
+	tags:['mongodb', 'robomongo'],
+	author: {
+		name:'Pesho',
+		twitter:'pecata',
+		linkedin:'petarpetrov'
+	}
+})
 
 -- Right click on collection -> Duplicate
 -- or
