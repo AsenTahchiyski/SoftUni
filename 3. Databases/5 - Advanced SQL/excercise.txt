@@ -1,0 +1,98 @@
+1.
+select 
+	e.FirstName + ' ' + e.LastName as Employee,
+	e.JobTitle,
+	m.FirstName + ' ' + m.LastName as Manager
+from (
+	select FirstName, LastName, ManagerID, JobTitle
+	from Employees ee
+where ee.DepartmentID=3) e
+join Employees m
+on e.ManagerID=m.EmployeeID
+order by e.JobTitle
+
+2.
+select top 5
+	e.FirstName,
+	e.LastName,
+	e.Salary,
+	d.Name as Department
+from Employees e
+join Departments d on e.DepartmentID=d.DepartmentID
+where Salary < (
+	select avg(Salary) from Employees
+	where DepartmentID = e.DepartmentID)
+order by Salary desc
+
+3.
+select 
+	p.Name,
+	SUM(Salary)
+from Projects p
+join EmployeesProjects ep on p.ProjectID=ep.ProjectID
+join Employees e on e.EmployeeID=ep.EmployeeID
+group by Name
+order by Name
+
+4.
+create table Companies (
+	Id int identity not null,
+	Name nvarchar(50) not null,
+	EmployeesCount int not null,
+	FoundedIn datetime not null,
+	constraint PK_Companies primary key(Id))
+go
+
+create table Conferences (
+	Id int identity not null,
+	Name nvarchar(50) not null,
+	Price money not null,
+	FreeSeats int not null,
+	Venue varchar(50) not null,
+	OrganizerId int not null)
+	constraint PK_Conferences primary key(Id)
+go
+
+alter table Conferences
+add constraint FK_Companies_Conferences
+foreign key (OrganizerId) references Companies(Id)
+
+alter table Conferences
+add TwitterAccount nvarchar(50)
+
+(delete from Companies where Id='1')
+(alter table Conferences
+drop column TwitterAccount)
+
+5.
+begin tran
+insert into Companies (Name, EmployeesCount, FoundedIn) values
+('Microsoft', 300000, '1.1.1'),
+('Apple', 100000, '1.1.2'),
+('Oracle', 100000, '1.2.1'),
+('Facebook', 200000, '1.2.2'),
+('Google', 400000, '2.1.1'),
+('Cisco', 100000, '1.1.2'),
+('Dell', 100000, '1.2.1'),
+('HP', 200000, '1.2.2'),
+('IBM', 400000, '2.1.1'),
+('VMware', 100000, '2.1.1')
+commit
+
+begin tran
+insert into Conferences (Name, Price, FreeSeats, Venue, OrganizerId) values
+('SQL Server Conference', 50, 100, 'Hilton CA, Silicon Valley', 2),
+('Oracle RDBMS Conference', 250, 1000, 'Hilton CA, Silicon Valley', 4),
+('iPhone 7 Launch', 0, 10, 'Hilton CA, Silicon Valley', 3),
+('Knowing Your Friends+', 50, 100, 'Hilton CA, Silicon Valley', 5),
+('DeepMind and Boston Dynamics', 0, 0, 'Hilton CA, Silicon Valley', 6)
+commit
+
+begin tran
+insert into Conferences (Name, Price, FreeSeats, Venue, OrganizerId) values
+('Next gen routing', 50, 10, 'Hilton CA, Silicon Valley', 7),
+('Our servers are the best!', 0, 1000, 'Hilton CA, Silicon Valley', 8),
+('Corruption in IT management', 20, 150, 'Hilton CA, Silicon Valley', 9),
+('Divide et !impera', 50, 100, 'Hilton CA, Silicon Valley', 10),
+('Green server management', 30, 30, 'Hilton CA, Silicon Valley', 11)
+commit

@@ -1,0 +1,8 @@
+http://www.relationaldbdesign.com/relational-database-design/module2/rdbms-functions.php
+
+Functions of a RDBMS
+The SQL component in a RDBMS creates the relational database and its structures
+The SQL in a RDBMS allows access to data in a variety of ways
+The SQL in a RDBMS provides the means to make changes to database records
+Has built-in security, as well as utilities to perform routine databse backups
+A feature rich RDBMS provides tools to generate invoices, payroll checks, financial reports, and other userful documents

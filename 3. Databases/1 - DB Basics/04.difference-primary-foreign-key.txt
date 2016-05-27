@@ -1,0 +1,1 @@
+While unique and primary keys both enforce uniqueness on the column(s) of one table, foreign keys define a relationship between two tables. A foreign key identifies a column or group of columns in one (referencing) table that refers to a column or group of columns in another (referenced) table. Also foreign keys can have NULL values, but the primary keys can not.
