@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{EB12F141-7202-40F0-92B5-144809E3DA3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{01151EB2-094D-4743-AF52-1DE49CFA0329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShopSystem.ConsoleClient", "BookShopSystem.ConsoleClient\BookShopSystem.ConsoleClient.csproj", "{DEF505D8-2EA0-4EED-8884-156BF69769E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB12F141-7202-40F0-92B5-144809E3DA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB12F141-7202-40F0-92B5-144809E3DA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB12F141-7202-40F0-92B5-144809E3DA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB12F141-7202-40F0-92B5-144809E3DA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01151EB2-094D-4743-AF52-1DE49CFA0329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01151EB2-094D-4743-AF52-1DE49CFA0329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01151EB2-094D-4743-AF52-1DE49CFA0329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01151EB2-094D-4743-AF52-1DE49CFA0329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF505D8-2EA0-4EED-8884-156BF69769E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF505D8-2EA0-4EED-8884-156BF69769E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF505D8-2EA0-4EED-8884-156BF69769E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF505D8-2EA0-4EED-8884-156BF69769E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
