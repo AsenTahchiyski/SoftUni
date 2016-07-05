@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DistanceCalc.Service1" CodeBehind="CalcDistance.svc.cs" %>

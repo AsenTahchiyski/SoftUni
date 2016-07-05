@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir name="Homework">
+  <file name="catalog.xml" />
+  <file name="dir-structure.xml" />
+  <file name="Homework.sln" />
+  <file name="Homework.sln.iml" />
+  <dir name=".idea">
+    <file name="codeStyleSettings.xml" />
+    <file name="modules.xml" />
+    <file name="workspace.xml" />
+  </dir>
+  <dir name="HomeworkMain">
+    <file name="App.config" />
+    <file name="catalog.xml" />
+    <file name="cheap-albums.xml" />
+    <file name="HomeworkMain.csproj" />
+    <file name="Program.cs" />
+    <dir name="bin">
+      <dir name="Debug">
+        <file name="HomeworkMain.exe" />
+        <file name="HomeworkMain.exe.config" />
+        <file name="HomeworkMain.pdb" />
+        <file name="HomeworkMain.vshost.exe" />
+        <file name="HomeworkMain.vshost.exe.config" />
+        <file name="HomeworkMain.vshost.exe.manifest" />
+      </dir>
+      <dir name="Release" />
+    </dir>
+    <dir name="obj">
+      <dir name="Debug">
+        <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+        <file name="HomeworkMain.csproj.FileListAbsolute.txt" />
+        <file name="HomeworkMain.csprojResolveAssemblyReference.cache" />
+        <file name="HomeworkMain.exe" />
+        <file name="HomeworkMain.pdb" />
+        <file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+        <file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+        <file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+        <dir name="TempPE" />
+      </dir>
+    </dir>
+    <dir name="Properties">
+      <file name="AssemblyInfo.cs" />
+    </dir>
+  </dir>
+</dir>

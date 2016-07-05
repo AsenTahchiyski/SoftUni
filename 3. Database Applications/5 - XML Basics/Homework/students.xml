@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <s:student xmlns:s="urn:student">
+    <s:age>21</s:age>
+    <s:name>Pesho</s:name>
+    <s:gender>Male</s:gender>
+    <s:birthdate>1995-5-23</s:birthdate>
+    <s:phone-number>0888888888</s:phone-number>
+    <s:email>pesho@mail.bg</s:email>
+    <s:university>Sofia University</s:university>
+    <s:specialty>Computer Sciences</s:specialty>
+    <s:faculty-number>SUF524421</s:faculty-number>
+    <s:taken-exams>
+      <e:exam xmlns:e="urn:exam">
+        <e:name>Java Basics</e:name>
+        <e:date-taken>2015-08-24</e:date-taken>
+          <e:grade>6.00</e:grade>
+      </e:exam>
+      <e:exam xmlns:e="urn:exam">
+        <e:name>Ruby on Rails</e:name>
+        <e:date-taken>2015-10-03</e:date-taken>
+          <e:grade>5.53</e:grade>
+      </e:exam>
+    </s:taken-exams>
+  </s:student>
+</students>
